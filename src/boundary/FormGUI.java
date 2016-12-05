@@ -22,12 +22,12 @@ public class FormGUI
     private JPanel FORMpanel;
     private JPanel FIELDpanel;
 
-    public FormGUI()
+    public FormGUI(JFrame mainFrame)
     {
+        this.mainFrame = mainFrame;
 
-
-        mainFrame.setContentPane(FIELDpanel);
-        mainFrame.pack();
+        this.mainFrame.setContentPane(FIELDpanel);
+        //mainFrame.pack();
 
 
         mainFrame.setVisible(true);

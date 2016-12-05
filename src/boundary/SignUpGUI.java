@@ -1,6 +1,8 @@
 package boundary;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created by giogge on 03/12/16.
@@ -20,6 +22,14 @@ public class SignUpGUI
         mainFrame.setTitle("ACCESS");
         mainFrame.setContentPane(signupPanel);
 
+        signUpButton.addActionListener(actionEvent -> {
+            this.mainFrame.setVisible(false);
+            //passa per controller
+            FormGUI gui = new FormGUI(this.mainFrame);
+        });
+
         mainFrame.setVisible(true);
     }
 }
+
+
