@@ -5,5 +5,18 @@ package control;
  */
 public class DatabaseController
 {
+    private static DatabaseController ourInstance = new DatabaseController();
 
+    public static DatabaseController getInstance() {
+        return ourInstance;
+    }
+
+    private DatabaseController()
+    {
+    }
+
+    public boolean checkUser()
+    {
+        return false;
+    }
 }

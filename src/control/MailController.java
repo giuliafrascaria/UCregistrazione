@@ -5,5 +5,19 @@ package control;
  */
 public class MailController
 {
+    private static MailController ourInstance = new MailController();
 
+    public static MailController getInstance() {
+        return ourInstance;
+    }
+
+    private MailController()
+    {
+
+    }
+
+    public void sendMail()
+    {
+
+    }
 }

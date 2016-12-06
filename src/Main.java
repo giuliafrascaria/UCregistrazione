@@ -1,5 +1,4 @@
-import boundary.FormGUI;
-import boundary.SignUpGUI;
+import boundary.AccessGUI;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,8 +18,9 @@ public class Main
             {
                 SizedFrame mainFrame = new SizedFrame();
 
-                SignUpGUI gui = new SignUpGUI(mainFrame);
+                //SignUpGUI gui = new SignUpGUI(mainFrame);
 
+                AccessGUI gui = new AccessGUI(mainFrame);
             }
         });
     }
