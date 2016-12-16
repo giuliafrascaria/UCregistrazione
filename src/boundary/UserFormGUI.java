@@ -80,20 +80,21 @@ public class UserFormGUI implements GUI
         confirmButton = new JButton("CONFIRM");
         confirmButton.addActionListener(actionEvent ->
         {
-            if(controller.checkFields(this.formPanel))
+            if(controller.checkFields(pwdField, confirmPwdField))
             {
-                if(dbController.checkUser())
+                if(dbController.checkUser(emailField))
                 {
                     mailController.sendMail();
                 }
                 else
                 {
-
+                    //utente esistente
                 }
             }
             else
             {
-
+                //password differenti
+                JOptionPane.showMessageDialog(globalPanel, "password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
             }
         });
         globalPanel.add(confirmButton);

@@ -33,8 +33,8 @@ public class SessionController {
         }
     }
 
-    public boolean checkFields(JPanel formPanel)
+    public boolean checkFields(JPasswordField p1, JPasswordField p2)
     {
-        return false;
+        return p1.getPassword() == p2.getPassword();
     }
 }
