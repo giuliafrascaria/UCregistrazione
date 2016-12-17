@@ -23,7 +23,7 @@ public class DatabaseController
 
     }
 
-    public boolean checkUser(JTextField mail)
+    public boolean checkUser(String mail)
     {
         return false;
     }

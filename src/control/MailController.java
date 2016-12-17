@@ -16,7 +16,7 @@ public class MailController
 
     }
 
-    public void sendMail()
+    public void sendMail(String mail)
     {
 
     }

@@ -33,8 +33,20 @@ public class SessionController {
         }
     }
 
-    public boolean checkFields(JPasswordField p1, JPasswordField p2)
+    public boolean checkPWDFields(char[] p1, char[] p2)
     {
-        return p1.getPassword() == p2.getPassword();
+        return p1 == p2;
+        //in teoria per motivi di sicurezza dovrei reinizializzare gli array
+    }
+
+    public boolean checkEmptyFields(String text)
+    {
+        return text.equals("");
+    }
+
+    public boolean checkValidEmail(String text)
+    {
+        return text.contains("@");
     }
 }
+

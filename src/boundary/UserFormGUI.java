@@ -5,16 +5,20 @@ import control.MailController;
 import control.SessionController;
 
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created by giogge on 05/12/16.
  */
 public class UserFormGUI implements GUI
 {
-    SessionController controller = SessionController.getInstance();
-    DatabaseController dbController = DatabaseController.getInstance();
-    MailController mailController = MailController.getInstance();
+    private SessionController controller = SessionController.getInstance();
+    private DatabaseController dbController = DatabaseController.getInstance();
+    private MailController mailController = MailController.getInstance();
 
     private JFrame mainFrame = new JFrame();
 
@@ -80,22 +84,20 @@ public class UserFormGUI implements GUI
         confirmButton = new JButton("CONFIRM");
         confirmButton.addActionListener(actionEvent ->
         {
-            if(controller.checkFields(pwdField, confirmPwdField))
+            if(!checkFields())
             {
-                if(dbController.checkUser(emailField))
+                if(dbController.checkUser(emailField.getText()))
                 {
-                    mailController.sendMail();
-                }
-                else
-                {
-                    //utente esistente
+                    JOptionPane.showMessageDialog(globalPanel,
+                            "Ti verrà inviata una mail di conferma", "Confirm",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    mailController.sendMail(emailField.getText());
+                    //this.mainFrame.setVisible(false);
+                    //controller.updateGUI(this.mainFrame, 2);
                 }
             }
-            else
-            {
-                //password differenti
-                JOptionPane.showMessageDialog(globalPanel, "password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
-            }
+
+
         });
         globalPanel.add(confirmButton);
         //mainFrame.add(confirmButton, BorderLayout.SOUTH);
@@ -107,4 +109,43 @@ public class UserFormGUI implements GUI
 
         mainFrame.setVisible(true);
     }
+
+    private boolean checkFields()
+    {
+        if (controller.checkEmptyFields(nameField.getText()))
+        {
+            JOptionPane.showMessageDialog(globalPanel,
+                    "Errore: inserire il nome", "Error Massage",
+                    JOptionPane.ERROR_MESSAGE);
+
+        }
+        if (controller.checkEmptyFields(surnameField.getText()))
+        {
+            JOptionPane.showMessageDialog(globalPanel,
+                    "Errore: inserire il cognome", "Error Massage",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+        if (controller.checkEmptyFields(emailField.getText()))
+        {
+            JOptionPane.showMessageDialog(globalPanel,
+                    "Errore: inserire una mail", "Error Massage",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+        if (!controller.checkValidEmail(emailField.getText()))
+        {
+            JOptionPane.showMessageDialog(globalPanel,
+                    "Errore: inserire una mail valida", "Error Massage",
+                    JOptionPane.ERROR_MESSAGE);
+            emailField.setText(null);
+        }
+        if (!controller.checkPWDFields(pwdField.getPassword(), confirmPwdField.getPassword()))
+        {
+            JOptionPane.showMessageDialog(globalPanel, "Password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
+            pwdField.setText(null);
+            confirmPwdField.setText(null);
+        }
+        return true;
+    }
+
+
 }
