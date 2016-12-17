@@ -28,8 +28,12 @@ public class SessionController {
         switch (frameN) {
             case 1:
                 gui = new UserFormGUI(mainFrame);
+                System.out.print(frameN);
             case 2:
                 gui = new ConfirmGUI(mainFrame);
+                System.out.print(frameN);
+            default:
+                break;
         }
     }
 

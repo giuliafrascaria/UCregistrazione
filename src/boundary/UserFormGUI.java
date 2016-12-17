@@ -96,8 +96,6 @@ public class UserFormGUI implements GUI
                     //controller.updateGUI(this.mainFrame, 2);
                 }
             }
-
-
         });
         globalPanel.add(confirmButton);
         //mainFrame.add(confirmButton, BorderLayout.SOUTH);
@@ -107,7 +105,7 @@ public class UserFormGUI implements GUI
         //mainFrame.pack();
 
 
-        mainFrame.setVisible(true);
+        this.mainFrame.setVisible(true);
     }
 
     private boolean checkFields()
@@ -117,6 +115,7 @@ public class UserFormGUI implements GUI
             JOptionPane.showMessageDialog(globalPanel,
                     "Errore: inserire il nome", "Error Massage",
                     JOptionPane.ERROR_MESSAGE);
+            return false;
 
         }
         if (controller.checkEmptyFields(surnameField.getText()))
@@ -124,12 +123,16 @@ public class UserFormGUI implements GUI
             JOptionPane.showMessageDialog(globalPanel,
                     "Errore: inserire il cognome", "Error Massage",
                     JOptionPane.ERROR_MESSAGE);
+            return false;
+
         }
         if (controller.checkEmptyFields(emailField.getText()))
         {
             JOptionPane.showMessageDialog(globalPanel,
                     "Errore: inserire una mail", "Error Massage",
                     JOptionPane.ERROR_MESSAGE);
+            return false;
+
         }
         if (!controller.checkValidEmail(emailField.getText()))
         {
@@ -137,13 +140,19 @@ public class UserFormGUI implements GUI
                     "Errore: inserire una mail valida", "Error Massage",
                     JOptionPane.ERROR_MESSAGE);
             emailField.setText(null);
+            return false;
+
         }
         if (!controller.checkPWDFields(pwdField.getPassword(), confirmPwdField.getPassword()))
         {
             JOptionPane.showMessageDialog(globalPanel, "Password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
             pwdField.setText(null);
             confirmPwdField.setText(null);
+            return false;
+
         }
+
+
         return true;
     }
 

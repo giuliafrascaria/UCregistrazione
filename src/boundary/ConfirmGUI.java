@@ -5,6 +5,7 @@ import control.MailController;
 import control.SessionController;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by giogge on 05/12/16.
@@ -28,7 +29,7 @@ public class ConfirmGUI implements GUI
 
         this.mainFrame = mainFrame;
         confirmPanel = new JPanel();
-        //signupPanel.setLayout(new GridLayout(5, 4));
+        confirmPanel.setLayout(new GridLayout(3, 1));
 
         confirmCode = new JLabel("Inserire codice di conferma");
         confirmPanel.add(confirmCode);
@@ -47,6 +48,6 @@ public class ConfirmGUI implements GUI
         this.mainFrame.setTitle("CONFIRM");
         this.mainFrame.setContentPane(confirmPanel);
 
-        mainFrame.setVisible(true);
+        this.mainFrame.setVisible(true);
     }
 }
