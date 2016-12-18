@@ -6,6 +6,7 @@ import boundary.UserFormGUI;
 
 import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
+import java.util.Arrays;
 
 /**
  * Created by giogge on 05/12/16.
@@ -29,17 +30,19 @@ public class SessionController {
             case 1:
                 gui = new UserFormGUI(mainFrame);
                 System.out.print(frameN);
-            case 2:
-                gui = new ConfirmGUI(mainFrame);
-                System.out.print(frameN);
             default:
                 break;
         }
     }
 
+    public void updateMailGUI(JFrame mainFrame)
+    {
+        gui = new ConfirmGUI(mainFrame);
+    }
+
     public boolean checkPWDFields(char[] p1, char[] p2)
     {
-        return p1 == p2;
+        return Arrays.equals(p1, p2);
         //in teoria per motivi di sicurezza dovrei reinizializzare gli array
     }
 

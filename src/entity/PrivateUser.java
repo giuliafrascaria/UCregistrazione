@@ -5,17 +5,20 @@ package entity;
  */
 public class PrivateUser
 {
-    private String name, email;
+    private String email, name;
 
-    public PrivateUser(String name, String email)
+    public PrivateUser()
     {
-        this.name = name;
-        this.email = email;
     }
 
     public String getName()
     {
         return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
     }
 
     public String getEmail()

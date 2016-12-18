@@ -9,17 +9,7 @@ DROP SCHEMA IF EXISTS USERS CASCADE;
 
 
 
-
-
-
-
-
 CREATE SCHEMA USERS;
-
-
-
-
-
 
 
 

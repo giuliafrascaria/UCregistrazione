@@ -10,6 +10,7 @@ import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 /**
  * Created by giogge on 05/12/16.
@@ -84,18 +85,51 @@ public class UserFormGUI implements GUI
         confirmButton = new JButton("CONFIRM");
         confirmButton.addActionListener(actionEvent ->
         {
-            if(!checkFields())
+            if (controller.checkEmptyFields(nameField.getText()))
             {
+                JOptionPane.showMessageDialog(globalPanel,
+                        "Errore: inserire il nome", "Error Massage",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+            if (controller.checkEmptyFields(surnameField.getText()))
+            {
+                JOptionPane.showMessageDialog(globalPanel,
+                        "Errore: inserire il cognome", "Error Massage",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+            if (controller.checkEmptyFields(emailField.getText()))
+            {
+                JOptionPane.showMessageDialog(globalPanel,
+                        "Errore: inserire una mail", "Error Massage",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+            if (!controller.checkValidEmail(emailField.getText()))
+            {
+                JOptionPane.showMessageDialog(globalPanel,
+                        "Errore: inserire una mail valida", "Error Massage",
+                        JOptionPane.ERROR_MESSAGE);
+                emailField.setText(null);
+            }
+            if (!(controller.checkPWDFields(pwdField.getPassword(), confirmPwdField.getPassword())))
+            {
+                JOptionPane.showMessageDialog(globalPanel, "Password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
+                pwdField.setText(null);
+                confirmPwdField.setText(null);
+            }
+            try {
                 if(dbController.checkUser(emailField.getText()))
                 {
                     JOptionPane.showMessageDialog(globalPanel,
                             "Ti verrà inviata una mail di conferma", "Confirm",
                             JOptionPane.INFORMATION_MESSAGE);
                     mailController.sendMail(emailField.getText());
-                    //this.mainFrame.setVisible(false);
-                    //controller.updateGUI(this.mainFrame, 2);
+                    this.mainFrame.setVisible(false);
+                    controller.updateMailGUI(this.mainFrame);
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
+
         });
         globalPanel.add(confirmButton);
         //mainFrame.add(confirmButton, BorderLayout.SOUTH);
@@ -107,54 +141,5 @@ public class UserFormGUI implements GUI
 
         this.mainFrame.setVisible(true);
     }
-
-    private boolean checkFields()
-    {
-        if (controller.checkEmptyFields(nameField.getText()))
-        {
-            JOptionPane.showMessageDialog(globalPanel,
-                    "Errore: inserire il nome", "Error Massage",
-                    JOptionPane.ERROR_MESSAGE);
-            return false;
-
-        }
-        if (controller.checkEmptyFields(surnameField.getText()))
-        {
-            JOptionPane.showMessageDialog(globalPanel,
-                    "Errore: inserire il cognome", "Error Massage",
-                    JOptionPane.ERROR_MESSAGE);
-            return false;
-
-        }
-        if (controller.checkEmptyFields(emailField.getText()))
-        {
-            JOptionPane.showMessageDialog(globalPanel,
-                    "Errore: inserire una mail", "Error Massage",
-                    JOptionPane.ERROR_MESSAGE);
-            return false;
-
-        }
-        if (!controller.checkValidEmail(emailField.getText()))
-        {
-            JOptionPane.showMessageDialog(globalPanel,
-                    "Errore: inserire una mail valida", "Error Massage",
-                    JOptionPane.ERROR_MESSAGE);
-            emailField.setText(null);
-            return false;
-
-        }
-        if (!controller.checkPWDFields(pwdField.getPassword(), confirmPwdField.getPassword()))
-        {
-            JOptionPane.showMessageDialog(globalPanel, "Password non coincidenti", "ERRORE", JOptionPane.OK_CANCEL_OPTION);
-            pwdField.setText(null);
-            confirmPwdField.setText(null);
-            return false;
-
-        }
-
-
-        return true;
-    }
-
 
 }
