@@ -126,6 +126,13 @@ public class UserFormGUI implements GUI
                     this.mainFrame.setVisible(false);
                     controller.updateMailGUI(this.mainFrame);
                 }
+                else
+                {
+                    JOptionPane.showMessageDialog(globalPanel,
+                            "Un account esiste già per la main indicata", "Error Message",
+                            JOptionPane.OK_CANCEL_OPTION);
+                    emailField.setText(null);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

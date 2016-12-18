@@ -31,7 +31,7 @@ public class DatabaseController
         System.out.println("sto per cercare l'utente");
         user = this.findByPrimaryKey(mail);
         System.out.println("ricerca finita");
-        return user != null;
+        return user == null;
     }
 
     private PrivateUser findByPrimaryKey(String userID) throws Exception
