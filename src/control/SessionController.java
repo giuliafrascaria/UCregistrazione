@@ -5,10 +5,8 @@ import boundary.GUI;
 import boundary.UserFormGUI;
 import entity.PrivateUser;
 
-import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
 import java.util.Arrays;
-
 
 public class SessionController
 {
@@ -29,7 +27,8 @@ public class SessionController
 
     public void updateGUI(JFrame mainFrame, int frameN)
     {
-        switch (frameN) {
+        switch (frameN)
+        {
             case 1:
                 gui = new UserFormGUI(mainFrame);
                 System.out.print(frameN);
@@ -44,7 +43,6 @@ public class SessionController
         user.setName(name);
         user.setEmail(email);
         user.setPwd(pwd);
-
     }
 
     public void addUser() throws Exception

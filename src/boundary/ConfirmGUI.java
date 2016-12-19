@@ -1,13 +1,10 @@
 package boundary;
 
-import control.DatabaseController;
 import control.MailController;
 import control.SessionController;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-
 
 public class ConfirmGUI implements GUI
 {
@@ -61,7 +58,6 @@ public class ConfirmGUI implements GUI
                     }
                 }
             }
-
         });
 
         confirmPanel.add(submitButton);
