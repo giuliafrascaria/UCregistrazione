@@ -3,17 +3,20 @@ package control;
 import boundary.ConfirmGUI;
 import boundary.GUI;
 import boundary.UserFormGUI;
+import entity.PrivateUser;
 
 import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
 import java.util.Arrays;
 
-/**
- * Created by giogge on 05/12/16.
- */
-public class SessionController {
+
+public class SessionController
+{
+
     private static SessionController ourInstance = new SessionController();
     private GUI gui;
+    private PrivateUser user;
+    private DatabaseController dbController = DatabaseController.getInstance();
 
     public static SessionController getInstance()
     {
@@ -33,6 +36,20 @@ public class SessionController {
             default:
                 break;
         }
+    }
+
+    public void saveData(String name, String email, char[] pwd)
+    {
+        user = new PrivateUser();
+        user.setName(name);
+        user.setEmail(email);
+        user.setPwd(pwd);
+
+    }
+
+    public void addUser() throws Exception
+    {
+        dbController.addUser(this.user);
     }
 
     public void updateMailGUI(JFrame mainFrame)

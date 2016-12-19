@@ -13,7 +13,9 @@ import javax.mail.internet.MimeMessage;
 /**
  * Created by giogge on 05/12/16.
  */
-public class MailController {
+public class MailController
+{
+
     private static MailController ourInstance = new MailController();
 
     public static MailController getInstance() {
@@ -41,7 +43,7 @@ public class MailController {
         int hashcode = this.hashGenerator(name, mail);
         System.out.println(hashcode);
 
-        //-------------------------------------------codice copiato malissimo---------------------
+        //---------------------------------------------------------------
         /*Properties props = new Properties();
         props.put("mail.smtp.host", "mail.domain.com");
 

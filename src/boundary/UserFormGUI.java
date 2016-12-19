@@ -12,9 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
-/**
- * Created by giogge on 05/12/16.
- */
+
 public class UserFormGUI implements GUI
 {
     private SessionController controller = SessionController.getInstance();
@@ -122,6 +120,8 @@ public class UserFormGUI implements GUI
                     JOptionPane.showMessageDialog(globalPanel,
                             "Ti verrà inviata una mail di conferma", "Confirm",
                             JOptionPane.INFORMATION_MESSAGE);
+
+                    controller.saveData(nameField.getText(), emailField.getText(), pwdField.getPassword());
                     mailController.sendMail(nameField.getText(), emailField.getText());
                     this.mainFrame.setVisible(false);
                     controller.updateMailGUI(this.mainFrame);

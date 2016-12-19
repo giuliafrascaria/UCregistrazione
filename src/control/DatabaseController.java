@@ -10,7 +10,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 
-
 public class DatabaseController
 {
     private DataSource dataSource;
@@ -40,15 +39,15 @@ public class DatabaseController
         PreparedStatement statement = null;
         PrivateUser user = null;
         ResultSet result = null;
-        //final String query = "select * from USERS.Privato where EMAIL=?";
-        final String query = "select * from USERS.UtenteRegistrato";
+        final String query = "select * from USERS.UtenteRegistrato where EMAIL=?";
+        //final String query = "select * from USERS.UtenteRegistrato";
 
 
         try{
             connection = this.dataSource.getConnection();
 
             statement = connection.prepareStatement(query);
-            //statement.setString(1, userID);
+            statement.setString(1, userID);
             result = statement.executeQuery();
 
             if (result.next()) {
@@ -77,25 +76,22 @@ public class DatabaseController
         return user;
     }
 
-    public void addUser() throws Exception
+    public void addUser(PrivateUser newUser) throws Exception
     {
 
         Connection connection = null;
         PreparedStatement statement = null;
-        final String insert = "insert into users(userID, password, firstName, lastName, accountType, mail) values (?,?,?,?,?,?)";
+        final String insert = "INSERT INTO USERS.UtenteRegistrato(EMAIL, PASSWORD) values (?,?)";
         try
         {
             connection = this.dataSource.getConnection();
 
 
-/*            statement = connection.prepareStatement(insert);
-            statement.setString(1, user.getUserID());
-            statement.setString(2, user.getPassword());
-            statement.setString(3, user.getFirstName());
-            statement.setString(4, user.getLastName());
-            statement.setInt(5, user.getAccountType());
-            statement.setString(6, user.getMail());
-            statement.executeUpdate();*/
+            statement = connection.prepareStatement(insert);
+            statement.setString(1, newUser.getEmail());
+            statement.setString(2, String.valueOf((newUser.getPwd())));
+
+            statement.executeUpdate();
 
         }
         finally

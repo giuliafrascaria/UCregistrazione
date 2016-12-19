@@ -64,12 +64,6 @@ CREATE TABLE USERS.Admin(
 );
 
 
-
-
-
-
-
-
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-----creazione delle tabelle*/
 
 

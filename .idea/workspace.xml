@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a6362816-340e-4047-89b9-1d1f4f311ab2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/AccessGUI.java" afterPath="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" afterPath="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/UserFormGUI.java" afterPath="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/DatabaseController.java" afterPath="$PROJECT_DIR$/src/control/DatabaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/MailController.java" afterPath="$PROJECT_DIR$/src/control/MailController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/SessionController.java" afterPath="$PROJECT_DIR$/src/control/SessionController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/dbInit.sql" afterPath="$PROJECT_DIR$/src/database/dbInit.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbInit.sql" afterPath="$PROJECT_DIR$/src/dbInit.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/PrivateUser.java" afterPath="$PROJECT_DIR$/src/entity/PrivateUser.java" />
     </list>
     <ignored path="UCsignup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +49,8 @@
       <file leaf-file-name="AccessGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+            <state relative-caret-position="72">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,25 +59,9 @@
       <file leaf-file-name="UserFormGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="135" column="14" selection-start-line="135" selection-start-column="14" selection-end-line="137" selection-end-column="13" />
+            <state relative-caret-position="72">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1482154944683" expanded="true" signature="1027:1068" ph="select * fro... users" />
-                <marker date="1482154944683" expanded="true" signature="1101:1121" ph="select * fro... Privato" />
-                <marker date="1482154944683" expanded="true" signature="1101:1137" ph="select * fro... UtenteRegistrato" />
-                <marker date="1482154944683" expanded="true" signature="2280:2376" ph="insert into users... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,9 +69,26 @@
       <file leaf-file-name="dbInit.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="164" column="93" selection-start-line="164" selection-start-column="93" selection-end-line="164" selection-end-column="93" />
+            <state relative-caret-position="306">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1482171537639" expanded="true" signature="1024:1074" ph="select * fro... users" />
+                <marker date="1482171537639" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
+                <marker date="1482171537639" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
+                <marker date="1482171537639" expanded="true" signature="2305:2369" ph="INSERT INTO USERS.UtenteRegistrato... " />
+                <marker date="1482171537639" expanded="true" signature="2339:2369" ph="insert into users... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,21 +96,21 @@
       <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="72">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfirmGUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfirmGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,11 +119,13 @@
       <file leaf-file-name="PrivateUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="558">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,14 +134,14 @@
       <file leaf-file-name="MailController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="365">
+              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,16 +176,16 @@
         <option value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/event/ActionListener.class" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/boundary/GUI.java" />
-        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
-        <option value="$PROJECT_DIR$/src/control/SessionController.java" />
-        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
         <option value="$PROJECT_DIR$/src/database/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
-        <option value="$PROJECT_DIR$/src/control/MailController.java" />
-        <option value="$PROJECT_DIR$/src/database/dbInit.sql" />
         <option value="$PROJECT_DIR$/src/dbInit.sql" />
-        <option value="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
+        <option value="$PROJECT_DIR$/src/database/dbInit.sql" />
+        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
+        <option value="$PROJECT_DIR$/src/control/MailController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
         <option value="$PROJECT_DIR$/src/control/DatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/control/SessionController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
       </list>
     </option>
   </component>
@@ -235,56 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UCsignup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -765,7 +722,7 @@
       <workItem from="1481898084956" duration="8292000" />
       <workItem from="1481964957600" duration="100000" />
       <workItem from="1481965060997" duration="2578000" />
-      <workItem from="1481970134359" duration="16752000" />
+      <workItem from="1481970134359" duration="21355000" />
     </task>
     <task id="LOCAL-00001" summary="package creation&#10;">
       <created>1480756969809</created>
@@ -858,11 +815,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482148108783</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="preparing to persist">
+      <created>1482154955748</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1482154955748</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50815000" />
+    <option name="totallyTimeSpent" value="55418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -876,7 +840,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -916,7 +880,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -948,7 +912,8 @@
     <MESSAGE value="fallimentari prove di mail" />
     <MESSAGE value="backdoor dell'hashcode" />
     <MESSAGE value="backdoor dell'hashcode 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="backdoor dell'hashcode 2" />
+    <MESSAGE value="preparing to persist" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparing to persist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -965,10 +930,11 @@
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482154944683" expanded="true" signature="1027:1068" ph="select * fro... users" />
-            <marker date="1482154944683" expanded="true" signature="1101:1121" ph="select * fro... Privato" />
-            <marker date="1482154944683" expanded="true" signature="1101:1137" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482154944683" expanded="true" signature="2280:2376" ph="insert into users... " />
+            <marker date="1482171537639" expanded="true" signature="1024:1074" ph="select * fro... users" />
+            <marker date="1482171537639" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
+            <marker date="1482171537639" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482171537639" expanded="true" signature="2305:2369" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482171537639" expanded="true" signature="2339:2369" ph="insert into users... " />
           </folding>
         </state>
       </provider>
@@ -994,8 +960,8 @@
         <state relative-caret-position="324">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1038,10 +1004,11 @@
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482154944683" expanded="true" signature="1027:1068" ph="select * fro... users" />
-            <marker date="1482154944683" expanded="true" signature="1101:1121" ph="select * fro... Privato" />
-            <marker date="1482154944683" expanded="true" signature="1101:1137" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482154944683" expanded="true" signature="2280:2376" ph="insert into users... " />
+            <marker date="1482171537639" expanded="true" signature="1024:1074" ph="select * fro... users" />
+            <marker date="1482171537639" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
+            <marker date="1482171537639" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482171537639" expanded="true" signature="2305:2369" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482171537639" expanded="true" signature="2339:2369" ph="insert into users... " />
           </folding>
         </state>
       </provider>
@@ -1074,8 +1041,8 @@
         <state relative-caret-position="324">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,10 +1069,11 @@
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482154944683" expanded="true" signature="1027:1068" ph="select * fro... users" />
-            <marker date="1482154944683" expanded="true" signature="1101:1121" ph="select * fro... Privato" />
-            <marker date="1482154944683" expanded="true" signature="1101:1137" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482154944683" expanded="true" signature="2280:2376" ph="insert into users... " />
+            <marker date="1482171537639" expanded="true" signature="1024:1074" ph="select * fro... users" />
+            <marker date="1482171537639" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
+            <marker date="1482171537639" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482171537639" expanded="true" signature="2305:2369" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482171537639" expanded="true" signature="2339:2369" ph="insert into users... " />
           </folding>
         </state>
       </provider>
@@ -1138,8 +1106,8 @@
         <state relative-caret-position="324">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1225,17 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7572d37e-c624-4a01-a81c-44689db03a1a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1254,20 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dbInit.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1276,60 +1219,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="558">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
+    <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="365">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
           <folding>
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="164" column="93" selection-start-line="164" selection-start-column="93" selection-end-line="164" selection-end-column="93" />
+        <state relative-caret-position="306">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="135" column="14" selection-start-line="135" selection-start-column="14" selection-end-line="137" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        <state relative-caret-position="72">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        <state relative-caret-position="162">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1482154944683" expanded="true" signature="1027:1068" ph="select * fro... users" />
-            <marker date="1482154944683" expanded="true" signature="1101:1121" ph="select * fro... Privato" />
-            <marker date="1482154944683" expanded="true" signature="1101:1137" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482154944683" expanded="true" signature="2280:2376" ph="insert into users... " />
+            <marker date="1482171537639" expanded="true" signature="1024:1074" ph="select * fro... users" />
+            <marker date="1482171537639" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
+            <marker date="1482171537639" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482171537639" expanded="true" signature="2305:2369" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482171537639" expanded="true" signature="2339:2369" ph="insert into users... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

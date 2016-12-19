@@ -8,14 +8,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-/**
- * Created by giogge on 05/12/16.
- */
+
 public class ConfirmGUI implements GUI
 {
 
     private SessionController controller = SessionController.getInstance();
-    private DatabaseController dbController = DatabaseController.getInstance();
     private MailController mailController = MailController.getInstance();
 
     private JFrame mainFrame = new JFrame();
@@ -53,10 +50,10 @@ public class ConfirmGUI implements GUI
                 {
                     JOptionPane.showMessageDialog(confirmPanel,
                             "Registrazione completata", "Success",
-                            JOptionPane.OK_OPTION);
+                            JOptionPane.INFORMATION_MESSAGE);
                     try
                     {
-                        dbController.addUser();
+                        controller.addUser();
                     }
                     catch (Exception e)
                     {
