@@ -691,7 +691,7 @@
       <workItem from="1481898084956" duration="8292000" />
       <workItem from="1481964957600" duration="100000" />
       <workItem from="1481965060997" duration="2578000" />
-      <workItem from="1481970134359" duration="13868000" />
+      <workItem from="1481970134359" duration="13893000" />
     </task>
     <task id="LOCAL-00001" summary="package creation&#10;">
       <created>1480756969809</created>
@@ -770,11 +770,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482147792932</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="backdoor dell'hashcode">
+      <created>1482148080929</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1482148080929</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47931000" />
+    <option name="totallyTimeSpent" value="47956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
