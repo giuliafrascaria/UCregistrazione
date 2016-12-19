@@ -6,6 +6,7 @@ import control.SessionController;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 /**
  * Created by giogge on 05/12/16.
@@ -38,6 +39,33 @@ public class ConfirmGUI implements GUI
         confirmPanel.add(confirmText);
 
         submitButton = new JButton("SUBMIT");
+        submitButton.addActionListener(ActionEvent ->
+        {
+            if (controller.checkEmptyFields(confirmText.getText()))
+            {
+                JOptionPane.showMessageDialog(confirmPanel,
+                        "Errore: inserire il nome", "Error Massage",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+            else
+            {
+                if(mailController.checkHash(confirmText.getText()))
+                {
+                    JOptionPane.showMessageDialog(confirmPanel,
+                            "Registrazione completata", "Success",
+                            JOptionPane.OK_OPTION);
+                    try
+                    {
+                        dbController.addUser();
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+        });
 
         confirmPanel.add(submitButton);
 
@@ -51,11 +79,4 @@ public class ConfirmGUI implements GUI
         this.mainFrame.setVisible(true);
     }
 
-    private void checkHash()
-    {
-        if(mailController.checkHash(confirmText.getText()))
-        {
-            //chiama dbController per inserire nel db
-        }
-    }
 }

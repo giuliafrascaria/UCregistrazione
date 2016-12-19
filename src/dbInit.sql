@@ -27,7 +27,7 @@ CREATE TABLE USERS.Azienda(
  SUPPORTO        VARCHAR                ,
  TELEFONO        VARCHAR                ,
  EMAIL            VARCHAR
-   REFERENCES USERS.UtenteRegistrato(EMAIL),
+ REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (PIVA)
 );
 

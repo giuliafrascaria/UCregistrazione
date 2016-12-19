@@ -34,9 +34,9 @@ CREATE TABLE USERS.Azienda(
 	NOMEAZIENDA    	VARCHAR            	,
 	SETTORE    	VARCHAR            	,
 	SUPPORTO    	VARCHAR            	,
-TELEFONO    	VARCHAR            	,
-EMAIL        	VARCHAR
-REFERENCES USERS.UtenteRegistrato(EMAIL),
+  TELEFONO    	VARCHAR            	,
+  EMAIL        	VARCHAR
+  REFERENCES USERS.UtenteRegistrato(EMAIL),
 	PRIMARY KEY (PIVA)
 );
 
@@ -46,9 +46,9 @@ REFERENCES USERS.UtenteRegistrato(EMAIL),
 CREATE TABLE USERS.Privato(
 	NOME        	VARCHAR            	,
 	COGNOME    	VARCHAR            	,
-TELEFONO    	VARCHAR            	,
-EMAIL        	VARCHAR
-REFERENCES USERS.UtenteRegistrato(EMAIL),
+  TELEFONO    	VARCHAR            	,
+  EMAIL        	VARCHAR
+  REFERENCES USERS.UtenteRegistrato(EMAIL),
 	PRIMARY KEY (EMAIL)
 );
 
@@ -58,8 +58,8 @@ REFERENCES USERS.UtenteRegistrato(EMAIL),
 CREATE TABLE USERS.Admin(
 	NOME        	VARCHAR            	,
 	COGNOME    	VARCHAR            	,
-EMAIL        	VARCHAR
-REFERENCES USERS.UtenteRegistrato(EMAIL),
+  EMAIL        	VARCHAR
+  REFERENCES USERS.UtenteRegistrato(EMAIL),
 	PRIMARY KEY (EMAIL)
 );
 
