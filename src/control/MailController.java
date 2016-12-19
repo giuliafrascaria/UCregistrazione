@@ -2,19 +2,12 @@ package control;
 import java.util.*;
 
 
-import java.security.Security;
-import java.util.Date;
 import java.util.Properties;
 
-/*import com.google.api.client.util.Base64;
-import com.google.api.services.gmail.Gmail;
-import com.google.api.services.gmail.model.Message;*/
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Properties;
-
+import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
+import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 /**
@@ -31,45 +24,61 @@ public class MailController {
 
     }
 
-    public void sendMail(String mail) {
-
+    private int hashGenerator(String name, String mail)
+    {
+        return Objects.hash(name, mail);
     }
 
-    /*public class GoogleMail {
-        private GoogleMail() {
+    public void sendMail(String name, String mail) throws MessagingException
+    {
+
+        int hashcode = this.hashGenerator(name, mail);
+
+        //-------------------------------------------codice copiato malissimo---------------------
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "mail.domain.com");
+
+        props.put("mail.smtp.auth","false");
+        props.put("mail.smtp.starttls.enable","false");
+        props.put("mail.smtp.port","25");
+
+        Session session = Session.getDefaultInstance(props);
+
+        Transport transport = session.getTransport("smtp");
+        transport.connect();
+/*        InternetAddress fromAddress = null;
+        InternetAddress toAddress = null;*/
+
+        try
+        {
+
+
+
+            Message message = new MimeMessage(session);
+
+            /*fromAddress = new InternetAddress(from);
+            toAddress = new InternetAddress(to);*/
+
+            message.setFrom(new InternetAddress("DaDa" + "<" + "no-reply@domain.com" + ">"));
+            message.setRecipients(Message.RecipientType.TO,
+                    InternetAddress.parse(mail));
+            String subject = "Codice di conferma";
+            message.setSubject(subject);
+            String content = "Ciao " + name + "! il tuo codice di conferma è " + hashcode;
+            message.setContent(content, "text/html; charset=UTF-8");
+
+            transport.sendMessage(message, message.getAllRecipients());
+            System.out.println("mail mandata");
+            //return true;
         }
-
-        private static MimeMessage createEmail(String to, String cc, String from, String subject, String bodyText) throws MessagingException {
-            Properties props = new Properties();
-            Session session = Session.getDefaultInstance(props, null);
-
-            MimeMessage email = new MimeMessage(session);
-            InternetAddress tAddress = new InternetAddress(to);
-            InternetAddress cAddress = cc.isEmpty() ? null : new InternetAddress(cc);
-            InternetAddress fAddress = new InternetAddress(from);
-
-            email.setFrom(fAddress);
-            if (cAddress != null) {
-                email.addRecipient(javax.mail.Message.RecipientType.CC, cAddress);
-            }
-            email.addRecipient(javax.mail.Message.RecipientType.TO, tAddress);
-            email.setSubject(subject);
-            email.setText(bodyText);
-            return email;
+        catch (MessagingException e)
+        {
+            e.printStackTrace();
         }
-
-        private static Message createMessageWithEmail(MimeMessage email) throws MessagingException, IOException {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            email.writeTo(baos);
-            String encodedEmail = Base64.encodeBase64URLSafeString(baos.toByteArray());
-            Message message = new Message();
-            message.setRaw(encodedEmail);
-            return message;
+        finally
+        {
+            transport.close();
         }
+    }
 
-        public static void Send(Gmail service, String recipientEmail, String ccEmail, String fromEmail, String title, String message) throws IOException, MessagingException {
-            Message m = createMessageWithEmail(createEmail(recipientEmail, ccEmail, fromEmail, title, message));
-            service.users().messages().send("me", m).execute();
-        }
-    }*/
 }

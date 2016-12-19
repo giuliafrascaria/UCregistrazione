@@ -122,7 +122,7 @@ public class UserFormGUI implements GUI
                     JOptionPane.showMessageDialog(globalPanel,
                             "Ti verrà inviata una mail di conferma", "Confirm",
                             JOptionPane.INFORMATION_MESSAGE);
-                    mailController.sendMail(emailField.getText());
+                    mailController.sendMail(nameField.getText(), emailField.getText());
                     this.mainFrame.setVisible(false);
                     controller.updateMailGUI(this.mainFrame);
                 }
