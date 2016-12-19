@@ -50,4 +50,12 @@ public class ConfirmGUI implements GUI
 
         this.mainFrame.setVisible(true);
     }
+
+    private void checkHash()
+    {
+        if(mailController.checkHash(confirmText.getText()))
+        {
+            //chiama dbController per inserire nel db
+        }
+    }
 }

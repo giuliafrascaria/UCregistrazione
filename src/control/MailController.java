@@ -20,8 +20,14 @@ public class MailController {
         return ourInstance;
     }
 
-    private MailController() {
+    private MailController()
+    {
 
+    }
+
+    public boolean checkHash(String userInput)
+    {
+        return true;
     }
 
     private int hashGenerator(String name, String mail)
@@ -33,9 +39,10 @@ public class MailController {
     {
 
         int hashcode = this.hashGenerator(name, mail);
+        System.out.println(hashcode);
 
         //-------------------------------------------codice copiato malissimo---------------------
-        Properties props = new Properties();
+        /*Properties props = new Properties();
         props.put("mail.smtp.host", "mail.domain.com");
 
         props.put("mail.smtp.auth","false");
@@ -46,8 +53,8 @@ public class MailController {
 
         Transport transport = session.getTransport("smtp");
         transport.connect();
-/*        InternetAddress fromAddress = null;
-        InternetAddress toAddress = null;*/
+*//*        InternetAddress fromAddress = null;
+        InternetAddress toAddress = null;*//*
 
         try
         {
@@ -56,8 +63,8 @@ public class MailController {
 
             Message message = new MimeMessage(session);
 
-            /*fromAddress = new InternetAddress(from);
-            toAddress = new InternetAddress(to);*/
+            *//*fromAddress = new InternetAddress(from);
+            toAddress = new InternetAddress(to);*//*
 
             message.setFrom(new InternetAddress("DaDa" + "<" + "no-reply@domain.com" + ">"));
             message.setRecipients(Message.RecipientType.TO,
@@ -67,7 +74,7 @@ public class MailController {
             String content = "Ciao " + name + "! il tuo codice di conferma è " + hashcode;
             message.setContent(content, "text/html; charset=UTF-8");
 
-            transport.sendMessage(message, message.getAllRecipients());
+            //transport.sendMessage(message, message.getAllRecipients());
             System.out.println("mail mandata");
             //return true;
         }
@@ -79,6 +86,7 @@ public class MailController {
         {
             transport.close();
         }
-    }
+    }*/
 
+    }
 }
