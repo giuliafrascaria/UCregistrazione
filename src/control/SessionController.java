@@ -13,6 +13,7 @@ public class SessionController
 {
 
     private static SessionController ourInstance = new SessionController();
+    private UserFactory factory = UserFactory.getInstance();
     private GUI gui;
     private PrivateUser user;
     private DatabaseController dbController = DatabaseController.getInstance();
@@ -42,7 +43,8 @@ public class SessionController
 
     public void saveData(String name, String email, String surname, char[] pwd)
     {
-        user = new PrivateUser();
+        user = factory.createUser();
+
         user.setName(name);
         user.setSurname(surname);
         user.setEmail(email);
