@@ -2,6 +2,7 @@ package control;
 
 import boundary.ConfirmGUI;
 import boundary.GUI;
+import boundary.ProfileGUI;
 import boundary.UserFormGUI;
 import entity.PrivateUser;
 
@@ -32,15 +33,18 @@ public class SessionController
             case 1:
                 gui = new UserFormGUI(mainFrame);
                 System.out.print(frameN);
-            default:
+                break;
+            case 3:
+                gui = new ProfileGUI(mainFrame, user.getName(), user.getEmail(), user.getEmail());
                 break;
         }
     }
 
-    public void saveData(String name, String email, char[] pwd)
+    public void saveData(String name, String email, String surname, char[] pwd)
     {
         user = new PrivateUser();
         user.setName(name);
+        user.setSurname(surname);
         user.setEmail(email);
         user.setPwd(pwd);
     }
@@ -48,6 +52,7 @@ public class SessionController
     public void addUser() throws Exception
     {
         dbController.addUser(this.user);
+
     }
 
     public void updateMailGUI(JFrame mainFrame)

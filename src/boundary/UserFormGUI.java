@@ -121,7 +121,7 @@ public class UserFormGUI implements GUI
                             "Ti verrà inviata una mail di conferma", "Confirm",
                             JOptionPane.INFORMATION_MESSAGE);
 
-                    controller.saveData(nameField.getText(), emailField.getText(), pwdField.getPassword());
+                    controller.saveData(nameField.getText(), emailField.getText(), surnameField.getText(), pwdField.getPassword());
                     mailController.sendMail(nameField.getText(), emailField.getText());
                     this.mainFrame.setVisible(false);
                     controller.updateMailGUI(this.mainFrame);

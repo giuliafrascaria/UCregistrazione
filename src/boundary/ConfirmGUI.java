@@ -51,6 +51,9 @@ public class ConfirmGUI implements GUI
                     try
                     {
                         controller.addUser();
+                        this.mainFrame.setVisible(false);
+                        controller.updateGUI(this.mainFrame, 3);
+
                     }
                     catch (Exception e)
                     {

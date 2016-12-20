@@ -1,5 +1,4 @@
 
-/*creazione delle tabelle*/
 
 
 DROP SCHEMA IF EXISTS USERS CASCADE;
@@ -13,9 +12,7 @@ CREATE SCHEMA USERS;
 
 CREATE TABLE USERS.UtenteRegistrato(
  EMAIL            VARCHAR                ,
- ID            VARCHAR                ,
  PASSWORD        VARCHAR                ,
- CONTATTO        VARCHAR                ,
  PRIMARY KEY (EMAIL)
 );
 
@@ -26,8 +23,7 @@ CREATE TABLE USERS.Azienda(
  SETTORE        VARCHAR                ,
  SUPPORTO        VARCHAR                ,
  TELEFONO        VARCHAR                ,
- EMAIL            VARCHAR
- REFERENCES USERS.UtenteRegistrato(EMAIL),
+ EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (PIVA)
 );
 
@@ -35,9 +31,7 @@ CREATE TABLE USERS.Azienda(
 CREATE TABLE USERS.Privato(
  NOME            VARCHAR                ,
  COGNOME        VARCHAR                ,
- TELEFONO        VARCHAR                ,
- EMAIL            VARCHAR
-   REFERENCES USERS.UtenteRegistrato(EMAIL),
+ EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (EMAIL)
 );
 
@@ -45,8 +39,7 @@ CREATE TABLE USERS.Privato(
 CREATE TABLE USERS.Admin(
  NOME            VARCHAR                ,
  COGNOME        VARCHAR                ,
- EMAIL            VARCHAR
-   REFERENCES USERS.UtenteRegistrato(EMAIL),
+ EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (EMAIL)
 );
 
@@ -136,9 +129,9 @@ CREATE TABLE ARTICLES.recensione(
 
 
 /*as users*/
-INSERT INTO USERS.UtenteRegistrato VALUES ('simone@gmail.com', '0', 'simone', '3333333333');
-INSERT INTO USERS.UtenteRegistrato VALUES ('giogge@gmail.com', '1', 'giogge', '3333333333');
-INSERT INTO USERS.UtenteRegistrato VALUES ('giuliac@gmail.com', '2', 'giulia', '3333333333');
+INSERT INTO USERS.UtenteRegistrato VALUES ('simone@gmail.com', 'simone');
+INSERT INTO USERS.UtenteRegistrato VALUES ('giogge@gmail.com', 'giogge');
+INSERT INTO USERS.UtenteRegistrato VALUES ('giuliac@gmail.com', 'giulia');
 
 
 /*as admin*/

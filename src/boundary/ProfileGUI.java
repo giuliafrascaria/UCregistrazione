@@ -17,21 +17,21 @@ public class ProfileGUI implements GUI
 
     private JFrame mainFrame = new JFrame();
 
-    private JTextField nameField;
-    private JTextField surnameField;
-    private JTextField emailField;
-    private JPasswordField pwdField;
-    private JPasswordField confirmPwdField;
+
+
     private JButton confirmButton;
     private JLabel cognome;
     private JLabel nome;
     private JLabel email;
-    private JLabel pwd;
-    private JLabel confirmPwd;
+    private JLabel welcome;
 
-    private JPanel formPanel, globalPanel;
+    private JLabel cognomeUtente;
+    private JLabel nomeUtente;
+    private JLabel emailUtente;
 
-    public ProfileGUI(JFrame mainFrame)
+    private JPanel formPanel, globalPanel, welcomePanel;
+
+    public ProfileGUI(JFrame mainFrame, String name, String surname, String mail)
     {
 
         this.mainFrame = mainFrame;
@@ -39,38 +39,34 @@ public class ProfileGUI implements GUI
         globalPanel = new JPanel();
         globalPanel.setLayout(new GridLayout(2,1));
 
+        welcomePanel = new JPanel();
+
+        welcome = new JLabel("\n\nBENVENUTO IN DaDa!!!");
+        welcomePanel.add(welcome);
+
+        globalPanel.add(welcomePanel);
+
         formPanel = new JPanel();
-        formPanel.setLayout(new GridLayout(5, 2));
+        formPanel.setLayout(new GridLayout(3, 2));
 
         nome = new JLabel("Nome");
         formPanel.add(nome);
 
-        nameField = new JTextField();
-        formPanel.add(nameField);
+        nomeUtente = new JLabel(name);
+        formPanel.add(nomeUtente);
 
         cognome = new JLabel("Cognome");
         formPanel.add(cognome);
 
-        surnameField = new JTextField();
-        formPanel.add(surnameField);
+        cognomeUtente = new JLabel(surname);
+        formPanel.add(cognomeUtente);
 
         email = new JLabel("email");
         formPanel.add(email);
 
-        emailField = new JTextField();
-        formPanel.add(emailField);
+        emailUtente = new JLabel(mail);
+        formPanel.add(emailUtente);
 
-        pwd = new JLabel("Password");
-        formPanel.add(pwd);
-
-        pwdField = new JPasswordField();
-        formPanel.add(pwdField);
-
-        confirmPwd = new JLabel("Confirm password");
-        formPanel.add(confirmPwd);
-
-        confirmPwdField = new JPasswordField();
-        formPanel.add(confirmPwdField);
 
         globalPanel.add(formPanel);
         //mainFrame.add(formPanel, BorderLayout.NORTH);

@@ -3,7 +3,7 @@ package entity;
 
 public class PrivateUser
 {
-    private String email, name;
+    private String email, name, surname;
     private char[] pwd;
 
     public PrivateUser() {}
@@ -16,6 +16,14 @@ public class PrivateUser
     public void setName(String name)
     {
         this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getEmail()
