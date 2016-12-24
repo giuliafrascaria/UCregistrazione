@@ -1,7 +1,7 @@
 package entity;
 
 
-public class PrivateUser
+public class PrivateUser extends RegisteredUser
 {
     private String email, name, surname;
     private char[] pwd;

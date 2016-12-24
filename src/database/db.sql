@@ -29,16 +29,16 @@ CREATE TABLE USERS.Azienda(
 
 
 CREATE TABLE USERS.Privato(
- NOME            VARCHAR                ,
- COGNOME        VARCHAR                ,
+ NOME            VARCHAR,
+ COGNOME        VARCHAR,
  EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (EMAIL)
 );
 
 
 CREATE TABLE USERS.Admin(
- NOME            VARCHAR                ,
- COGNOME        VARCHAR                ,
+ NOME            VARCHAR,
+ COGNOME        VARCHAR,
  EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (EMAIL)
 );

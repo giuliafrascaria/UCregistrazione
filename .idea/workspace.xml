@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6362816-340e-4047-89b9-1d1f4f311ab2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/control/UserFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/control/Observer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Admin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/CorporateUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/SessionController.java" afterPath="$PROJECT_DIR$/src/control/SessionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/AccessGUI.java" afterPath="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/db.sql" afterPath="$PROJECT_DIR$/src/database/db.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/PrivateUser.java" afterPath="$PROJECT_DIR$/src/entity/PrivateUser.java" />
     </list>
     <ignored path="UCsignup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,350 +46,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
-                <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
-                <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
-                <marker date="1482241965075" expanded="true" signature="2382:2446" ph="INSERT INTO USERS.UtenteRegistrato... " />
-                <marker date="1482241965075" expanded="true" signature="2416:2446" ph="insert into users... " />
-                <marker date="1482241965075" expanded="true" signature="2481:2543" ph="INSERT INTO USERS.UtenteRegistrato... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/boundary.GUI" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/boundary.GUI">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>boundary.GUI</OriginalElement>
-              <nodes>
-                <node x="1206.7666666666667" y="1725.0">boundary.AccessGUI</node>
-                <node x="1050.5509259259256" y="436.0">control.MailController</node>
-                <node x="390.0" y="117.5">database.DataSource</node>
-                <node x="1517.7120370370371" y="850.0">boundary.ConfirmGUI</node>
-                <node x="0.0" y="0.0">entity.PrivateUser</node>
-                <node x="273.0" y="423.0">control.DatabaseController</node>
-                <node x="353.7120370370369" y="720.0">boundary.UserFormGUI</node>
-                <node x="1822.812037037037" y="515.0">boundary.GUI</node>
-                <node x="703.4166666666666" y="1302.0">control.SessionController</node>
-                <node x="955.7120370370369" y="746.0">boundary.ProfileGUI</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="control.DatabaseController" target="entity.PrivateUser">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="control.MailController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.UserFormGUI">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="control.SessionController" target="control.DatabaseController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.AccessGUI" target="boundary.GUI">
-                  <point x="85.5" y="-95.0" />
-                  <point x="1463.2666666666667" y="1700.0" />
-                  <point x="1922.6509259259258" y="1700.0" />
-                  <point x="1922.6509259259258" y="690.0" />
-                  <point x="1874.1120370370368" y="690.0" />
-                  <point x="22.799999999999955" y="16.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.ConfirmGUI">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.DatabaseController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.SessionController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.GUI">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.MailController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="control.SessionController" target="entity.PrivateUser">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="control.DatabaseController" target="database.DataSource">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="boundary.GUI">
-                  <point x="180.66666666666674" y="-225.0" />
-                  <point x="1407.3787037037036" y="690.0" />
-                  <point x="1839.912037037037" y="690.0" />
-                  <point x="-11.400000000000091" y="16.5" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="control.SessionController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.AccessGUI" target="control.SessionController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="boundary.GUI">
-                  <point x="95.5" y="-121.0" />
-                  <point x="1804.2120370370371" y="700.0" />
-                  <point x="1851.312037037037" y="700.0" />
-                  <point x="0.0" y="16.5" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.MailController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.DatabaseController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="boundary.GUI">
-                  <point x="194.0" y="-251.0" />
-                  <point x="838.7120370370369" y="680.0" />
-                  <point x="1828.5120370370369" y="680.0" />
-                  <point x="-22.799999999999955" y="16.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.ProfileGUI">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.SessionController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="673.9999999999993" y="808.9999999999995" />
-              <SelectedNodes>
-                <node>boundary.ProfileGUI</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUI.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>boundary.GUI</OriginalElement>
-              <nodes>
-                <node x="1060.7666666666667" y="1516.0">boundary.AccessGUI</node>
-                <node x="905.1018518518517" y="227.0">control.MailController</node>
-                <node x="244.0" y="13.0">database.DataSource</node>
-                <node x="1371.036111111111" y="641.0">boundary.ConfirmGUI</node>
-                <node x="0.0" y="0.0">entity.PrivateUser</node>
-                <node x="127.0" y="214.0">control.DatabaseController</node>
-                <node x="207.03611111111104" y="511.0">boundary.UserFormGUI</node>
-                <node x="1676.136111111111" y="306.0">boundary.GUI</node>
-                <node x="557.4166666666665" y="1093.0">control.SessionController</node>
-                <node x="809.036111111111" y="537.0">boundary.ProfileGUI</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="control.DatabaseController" target="entity.PrivateUser">
-                  <point x="-110.33333333333331" y="-108.5" />
-                  <point x="182.16666666666674" y="189.0" />
-                  <point x="186.66666666666674" y="189.0" />
-                  <point x="74.66666666666669" y="82.0" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="control.MailController">
-                  <point x="-95.5" y="-121.0" />
-                  <point x="1466.536111111111" y="461.0" />
-                  <point x="1180.935185185185" y="461.0" />
-                  <point x="110.33333333333326" y="95.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.UserFormGUI">
-                  <point x="-74.09999999999991" y="-186.5" />
-                  <point x="730.3166666666666" y="1043.0" />
-                  <point x="352.53611111111104" y="1043.0" />
-                  <point x="-145.5" y="251.0" />
-                </edge>
-                <edge source="control.SessionController" target="control.DatabaseController">
-                  <point x="-123.49999999999989" y="-186.5" />
-                  <point x="680.9166666666667" y="1053.0" />
-                  <point x="165.53611111111104" y="1053.0" />
-                  <point x="165.53611111111104" y="491.0" />
-                  <point x="182.16666666666674" y="491.0" />
-                  <point x="-110.33333333333326" y="108.5" />
-                </edge>
-                <edge source="boundary.AccessGUI" target="boundary.GUI">
-                  <point x="85.50000000000006" y="-95.0" />
-                  <point x="1317.2666666666667" y="1491.0" />
-                  <point x="1777.2018518518516" y="1491.0" />
-                  <point x="1777.2018518518516" y="481.0" />
-                  <point x="1727.4361111111111" y="481.0" />
-                  <point x="22.799999999999955" y="16.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.ConfirmGUI">
-                  <point x="123.5" y="-186.5" />
-                  <point x="927.9166666666665" y="1053.0" />
-                  <point x="1466.536111111111" y="1053.0" />
-                  <point x="-95.5" y="121.0" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.DatabaseController">
-                  <point x="-180.66666666666663" y="-225.0" />
-                  <point x="899.3694444444443" y="451.0" />
-                  <point x="402.8333333333333" y="451.0" />
-                  <point x="110.33333333333331" y="108.5" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.SessionController">
-                  <point x="135.5" y="225.0" />
-                  <point x="1215.536111111111" y="1043.0" />
-                  <point x="878.5166666666667" y="1043.0" />
-                  <point x="74.10000000000002" y="-186.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.GUI">
-                  <point x="222.29999999999995" y="-186.5" />
-                  <point x="1026.7166666666665" y="1073.0" />
-                  <point x="1763.536111111111" y="1073.0" />
-                  <point x="1763.536111111111" y="491.0" />
-                  <point x="1716.036111111111" y="491.0" />
-                  <point x="11.400000000000091" y="16.5" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.MailController">
-                  <point x="0.0" y="-251.0" />
-                  <point x="498.03611111111104" y="461.0" />
-                  <point x="960.2685185185182" y="461.0" />
-                  <point x="-110.33333333333337" y="95.5" />
-                </edge>
-                <edge source="control.SessionController" target="entity.PrivateUser">
-                  <point x="-172.89999999999986" y="-186.5" />
-                  <point x="631.5166666666667" y="1063.0" />
-                  <point x="80.16666666666663" y="1063.0" />
-                  <point x="80.16666666666663" y="189.0" />
-                  <point x="112.0" y="189.0" />
-                  <point x="0.0" y="82.0" />
-                </edge>
-                <edge source="control.DatabaseController" target="database.DataSource">
-                  <point x="110.33333333333331" y="-108.5" />
-                  <point x="402.8333333333333" y="189.0" />
-                  <point x="389.5" y="189.0" />
-                  <point x="48.5" y="69.0" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="boundary.GUI">
-                  <point x="180.66666666666674" y="-225.0" />
-                  <point x="1260.7027777777778" y="481.0" />
-                  <point x="1693.2361111111109" y="481.0" />
-                  <point x="-11.400000000000091" y="16.5" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="control.SessionController">
-                  <point x="95.5" y="121.0" />
-                  <point x="1657.536111111111" y="1063.0" />
-                  <point x="977.3166666666666" y="1063.0" />
-                  <point x="172.89999999999998" y="-186.5" />
-                </edge>
-                <edge source="boundary.AccessGUI" target="control.SessionController">
-                  <point x="-85.5" y="-95.0" />
-                  <point x="1146.2666666666667" y="1491.0" />
-                  <point x="804.4166666666665" y="1491.0" />
-                  <point x="0.0" y="186.5" />
-                </edge>
-                <edge source="boundary.ConfirmGUI" target="boundary.GUI">
-                  <point x="95.5" y="-121.0" />
-                  <point x="1657.536111111111" y="491.0" />
-                  <point x="1704.636111111111" y="491.0" />
-                  <point x="0.0" y="16.5" />
-                </edge>
-                <edge source="boundary.ProfileGUI" target="control.MailController">
-                  <point x="0.0" y="-225.0" />
-                  <point x="1080.036111111111" y="461.0" />
-                  <point x="1070.6018518518517" y="461.0" />
-                  <point x="0.0" y="95.5" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.DatabaseController">
-                  <point x="-194.0" y="-251.0" />
-                  <point x="304.03611111111104" y="491.0" />
-                  <point x="292.5" y="491.0" />
-                  <point x="0.0" y="108.5" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="boundary.GUI">
-                  <point x="194.0" y="-251.0" />
-                  <point x="692.036111111111" y="471.0" />
-                  <point x="1681.8361111111112" y="471.0" />
-                  <point x="-22.799999999999955" y="16.5" />
-                </edge>
-                <edge source="control.SessionController" target="boundary.ProfileGUI">
-                  <point x="24.700000000000045" y="-186.5" />
-                  <point x="829.1166666666666" y="1033.0" />
-                  <point x="944.536111111111" y="1033.0" />
-                  <point x="-135.5" y="225.0" />
-                </edge>
-                <edge source="boundary.UserFormGUI" target="control.SessionController">
-                  <point x="145.5" y="251.0" />
-                  <point x="643.536111111111" y="1033.0" />
-                  <point x="779.7166666666667" y="1033.0" />
-                  <point x="-24.699999999999932" y="-186.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.33198146002317497" x="-91.47643979057591" y="712.9319371727748" />
-              <SelectedNodes>
-                <node>boundary.UserFormGUI</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/UserFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserFormGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2034">
+            <state relative-caret-position="-71">
               <caret line="123" column="107" selection-start-line="123" selection-start-column="107" selection-end-line="123" selection-end-column="107" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
+      <file leaf-file-name="AdminGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/AdminGUI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -392,52 +66,94 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CorporateUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/CorporateUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrivateUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21">
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+              <folding>
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisteredUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/RegisteredUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entity/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="e#557#558#0" expanded="false" />
+                <element signature="e#591#592#0" expanded="false" />
+                <element signature="e#1428#1429#0" expanded="false" />
+                <element signature="e#1475#1476#0" expanded="false" />
+                <element signature="e#1715#1716#0" expanded="false" />
+                <element signature="e#1753#1754#0" expanded="false" />
+                <element signature="e#1808#1809#0" expanded="false" />
+                <element signature="e#1849#1850#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="db.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+            <state relative-caret-position="3348">
+              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/boundary/ProfileGUI.java">
+      <file leaf-file-name="AccessGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+            <state relative-caret-position="-121">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#465#466#0" expanded="false" />
-                <element signature="e#499#500#0" expanded="false" />
-                <element signature="e#596#597#0" expanded="false" />
-                <element signature="e#623#624#0" expanded="false" />
-                <element signature="e#686#687#0" expanded="false" />
-                <element signature="e#733#734#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfirmGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -475,15 +191,18 @@
         <option value="$PROJECT_DIR$/src/dbInit.sql" />
         <option value="$PROJECT_DIR$/src/database/dbInit.sql" />
         <option value="$PROJECT_DIR$/src/control/MailController.java" />
-        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/ProfileGUI.java" />
-        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
         <option value="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
-        <option value="$PROJECT_DIR$/src/database/db.sql" />
         <option value="$PROJECT_DIR$/src/control/DatabaseController.java" />
         <option value="$PROJECT_DIR$/src/control/UserFactory.java" />
         <option value="$PROJECT_DIR$/src/control/SessionController.java" />
+        <option value="$PROJECT_DIR$/src/database/db.sql" />
+        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
+        <option value="$PROJECT_DIR$/src/entity/Admin.java" />
+        <option value="$PROJECT_DIR$/src/entity/CorporateUser.java" />
+        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
       </list>
     </option>
   </component>
@@ -530,6 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -636,8 +357,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1143,7 +862,8 @@
       <workItem from="1482181053750" duration="480000" />
       <workItem from="1482181548697" duration="820000" />
       <workItem from="1482230941118" duration="883000" />
-      <workItem from="1482231834228" duration="6771000" />
+      <workItem from="1482231834228" duration="8990000" />
+      <workItem from="1482569314102" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="package creation&#10;">
       <created>1480756969809</created>
@@ -1264,11 +984,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482243015206</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="aggiunta pattern factory">
+      <created>1482254386106</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1482254386106</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67698000" />
+    <option name="totallyTimeSpent" value="70886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="0" />
@@ -1281,8 +1008,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1294,8 +1021,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Running Result" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Running Result" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1372,7 +1099,8 @@
     <MESSAGE value="aggiunta user" />
     <MESSAGE value="strano update Database" />
     <MESSAGE value="fine use case e class diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine use case e class diagram" />
+    <MESSAGE value="aggiunta pattern factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunta pattern factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1383,54 +1111,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
-            <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
-            <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482241965075" expanded="true" signature="2382:2446" ph="INSERT INTO USERS.UtenteRegistrato... " />
-            <marker date="1482241965075" expanded="true" signature="2416:2446" ph="insert into users... " />
-            <marker date="1482241965075" expanded="true" signature="2481:2543" ph="INSERT INTO USERS.UtenteRegistrato... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1451,9 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,6 +1148,11 @@
         <state relative-caret-position="270">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
             <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
             <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
             <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
@@ -1484,7 +1167,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,39 +1306,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/summaryGUI.java" />
     <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql" />
-    <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#172#173#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="false" />
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#275#276#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#487#488#0" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#601#602#0" expanded="false" />
-            <element signature="e#627#628#0" expanded="false" />
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1665,19 +1326,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
+        <state relative-caret-position="72">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1705,7 +1358,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="220.5" y="250.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="221.0" y="251.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1715,9 +1368,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/ProfileGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="882">
           <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1729,33 +1384,17 @@
           <nodes>
             <node x="1206.7666666666667" y="1725.0">boundary.AccessGUI</node>
             <node x="1050.5509259259256" y="436.0">control.MailController</node>
-            <node x="390.0" y="117.5">database.DataSource</node>
             <node x="1517.7120370370371" y="850.0">boundary.ConfirmGUI</node>
+            <node x="390.0" y="117.5">database.DataSource</node>
             <node x="0.0" y="0.0">entity.PrivateUser</node>
             <node x="273.0" y="423.0">control.DatabaseController</node>
-            <node x="353.7120370370369" y="720.0">boundary.UserFormGUI</node>
             <node x="1822.812037037037" y="515.0">boundary.GUI</node>
+            <node x="353.7120370370369" y="720.0">boundary.UserFormGUI</node>
             <node x="703.4166666666666" y="1302.0">control.SessionController</node>
             <node x="955.7120370370369" y="746.0">boundary.ProfileGUI</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="control.DatabaseController" target="entity.PrivateUser">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.ConfirmGUI" target="control.MailController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="control.SessionController" target="boundary.UserFormGUI">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="control.SessionController" target="control.DatabaseController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="boundary.AccessGUI" target="boundary.GUI">
               <point x="85.5" y="-95.0" />
               <point x="1463.2666666666667" y="1700.0" />
@@ -1764,47 +1403,11 @@
               <point x="1874.1120370370368" y="690.0" />
               <point x="22.799999999999955" y="16.5" />
             </edge>
-            <edge source="control.SessionController" target="boundary.ConfirmGUI">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.ProfileGUI" target="control.DatabaseController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.ProfileGUI" target="control.SessionController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="control.SessionController" target="boundary.GUI">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.MailController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="control.SessionController" target="entity.PrivateUser">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="control.DatabaseController" target="database.DataSource">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="boundary.ProfileGUI" target="boundary.GUI">
               <point x="180.66666666666674" y="-225.0" />
               <point x="1407.3787037037036" y="690.0" />
               <point x="1839.912037037037" y="690.0" />
               <point x="-11.400000000000091" y="16.5" />
-            </edge>
-            <edge source="boundary.ConfirmGUI" target="control.SessionController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.AccessGUI" target="control.SessionController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
             </edge>
             <edge source="boundary.ConfirmGUI" target="boundary.GUI">
               <point x="95.5" y="-121.0" />
@@ -1812,30 +1415,14 @@
               <point x="1851.312037037037" y="700.0" />
               <point x="0.0" y="16.5" />
             </edge>
-            <edge source="boundary.ProfileGUI" target="control.MailController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.DatabaseController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="boundary.UserFormGUI" target="boundary.GUI">
               <point x="194.0" y="-251.0" />
               <point x="838.7120370370369" y="680.0" />
               <point x="1828.5120370370369" y="680.0" />
               <point x="-22.799999999999955" y="16.5" />
             </edge>
-            <edge source="control.SessionController" target="boundary.ProfileGUI">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.SessionController">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="673.9999999999993" y="808.9999999999995" />
+          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="674.0" y="809.0" />
           <SelectedNodes>
             <node>boundary.ProfileGUI</node>
           </SelectedNodes>
@@ -1857,43 +1444,17 @@
           <nodes>
             <node x="1060.7666666666667" y="1516.0">boundary.AccessGUI</node>
             <node x="905.1018518518517" y="227.0">control.MailController</node>
-            <node x="244.0" y="13.0">database.DataSource</node>
             <node x="1371.036111111111" y="641.0">boundary.ConfirmGUI</node>
+            <node x="244.0" y="13.0">database.DataSource</node>
             <node x="0.0" y="0.0">entity.PrivateUser</node>
             <node x="127.0" y="214.0">control.DatabaseController</node>
-            <node x="207.03611111111104" y="511.0">boundary.UserFormGUI</node>
             <node x="1676.136111111111" y="306.0">boundary.GUI</node>
+            <node x="207.03611111111104" y="511.0">boundary.UserFormGUI</node>
             <node x="557.4166666666665" y="1093.0">control.SessionController</node>
             <node x="809.036111111111" y="537.0">boundary.ProfileGUI</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="control.DatabaseController" target="entity.PrivateUser">
-              <point x="-110.33333333333331" y="-108.5" />
-              <point x="182.16666666666674" y="189.0" />
-              <point x="186.66666666666674" y="189.0" />
-              <point x="74.66666666666669" y="82.0" />
-            </edge>
-            <edge source="boundary.ConfirmGUI" target="control.MailController">
-              <point x="-95.5" y="-121.0" />
-              <point x="1466.536111111111" y="461.0" />
-              <point x="1180.935185185185" y="461.0" />
-              <point x="110.33333333333326" y="95.5" />
-            </edge>
-            <edge source="control.SessionController" target="boundary.UserFormGUI">
-              <point x="-74.09999999999991" y="-186.5" />
-              <point x="730.3166666666666" y="1043.0" />
-              <point x="352.53611111111104" y="1043.0" />
-              <point x="-145.5" y="251.0" />
-            </edge>
-            <edge source="control.SessionController" target="control.DatabaseController">
-              <point x="-123.49999999999989" y="-186.5" />
-              <point x="680.9166666666667" y="1053.0" />
-              <point x="165.53611111111104" y="1053.0" />
-              <point x="165.53611111111104" y="491.0" />
-              <point x="182.16666666666674" y="491.0" />
-              <point x="-110.33333333333326" y="108.5" />
-            </edge>
             <edge source="boundary.AccessGUI" target="boundary.GUI">
               <point x="85.50000000000006" y="-95.0" />
               <point x="1317.2666666666667" y="1491.0" />
@@ -1902,69 +1463,11 @@
               <point x="1727.4361111111111" y="481.0" />
               <point x="22.799999999999955" y="16.5" />
             </edge>
-            <edge source="control.SessionController" target="boundary.ConfirmGUI">
-              <point x="123.5" y="-186.5" />
-              <point x="927.9166666666665" y="1053.0" />
-              <point x="1466.536111111111" y="1053.0" />
-              <point x="-95.5" y="121.0" />
-            </edge>
-            <edge source="boundary.ProfileGUI" target="control.DatabaseController">
-              <point x="-180.66666666666663" y="-225.0" />
-              <point x="899.3694444444443" y="451.0" />
-              <point x="402.8333333333333" y="451.0" />
-              <point x="110.33333333333331" y="108.5" />
-            </edge>
-            <edge source="boundary.ProfileGUI" target="control.SessionController">
-              <point x="135.5" y="225.0" />
-              <point x="1215.536111111111" y="1043.0" />
-              <point x="878.5166666666667" y="1043.0" />
-              <point x="74.10000000000002" y="-186.5" />
-            </edge>
-            <edge source="control.SessionController" target="boundary.GUI">
-              <point x="222.29999999999995" y="-186.5" />
-              <point x="1026.7166666666665" y="1073.0" />
-              <point x="1763.536111111111" y="1073.0" />
-              <point x="1763.536111111111" y="491.0" />
-              <point x="1716.036111111111" y="491.0" />
-              <point x="11.400000000000091" y="16.5" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.MailController">
-              <point x="0.0" y="-251.0" />
-              <point x="498.03611111111104" y="461.0" />
-              <point x="960.2685185185182" y="461.0" />
-              <point x="-110.33333333333337" y="95.5" />
-            </edge>
-            <edge source="control.SessionController" target="entity.PrivateUser">
-              <point x="-172.89999999999986" y="-186.5" />
-              <point x="631.5166666666667" y="1063.0" />
-              <point x="80.16666666666663" y="1063.0" />
-              <point x="80.16666666666663" y="189.0" />
-              <point x="112.0" y="189.0" />
-              <point x="0.0" y="82.0" />
-            </edge>
-            <edge source="control.DatabaseController" target="database.DataSource">
-              <point x="110.33333333333331" y="-108.5" />
-              <point x="402.8333333333333" y="189.0" />
-              <point x="389.5" y="189.0" />
-              <point x="48.5" y="69.0" />
-            </edge>
             <edge source="boundary.ProfileGUI" target="boundary.GUI">
               <point x="180.66666666666674" y="-225.0" />
               <point x="1260.7027777777778" y="481.0" />
               <point x="1693.2361111111109" y="481.0" />
               <point x="-11.400000000000091" y="16.5" />
-            </edge>
-            <edge source="boundary.ConfirmGUI" target="control.SessionController">
-              <point x="95.5" y="121.0" />
-              <point x="1657.536111111111" y="1063.0" />
-              <point x="977.3166666666666" y="1063.0" />
-              <point x="172.89999999999998" y="-186.5" />
-            </edge>
-            <edge source="boundary.AccessGUI" target="control.SessionController">
-              <point x="-85.5" y="-95.0" />
-              <point x="1146.2666666666667" y="1491.0" />
-              <point x="804.4166666666665" y="1491.0" />
-              <point x="0.0" y="186.5" />
             </edge>
             <edge source="boundary.ConfirmGUI" target="boundary.GUI">
               <point x="95.5" y="-121.0" />
@@ -1972,47 +1475,23 @@
               <point x="1704.636111111111" y="491.0" />
               <point x="0.0" y="16.5" />
             </edge>
-            <edge source="boundary.ProfileGUI" target="control.MailController">
-              <point x="0.0" y="-225.0" />
-              <point x="1080.036111111111" y="461.0" />
-              <point x="1070.6018518518517" y="461.0" />
-              <point x="0.0" y="95.5" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.DatabaseController">
-              <point x="-194.0" y="-251.0" />
-              <point x="304.03611111111104" y="491.0" />
-              <point x="292.5" y="491.0" />
-              <point x="0.0" y="108.5" />
-            </edge>
             <edge source="boundary.UserFormGUI" target="boundary.GUI">
               <point x="194.0" y="-251.0" />
               <point x="692.036111111111" y="471.0" />
               <point x="1681.8361111111112" y="471.0" />
               <point x="-22.799999999999955" y="16.5" />
             </edge>
-            <edge source="control.SessionController" target="boundary.ProfileGUI">
-              <point x="24.700000000000045" y="-186.5" />
-              <point x="829.1166666666666" y="1033.0" />
-              <point x="944.536111111111" y="1033.0" />
-              <point x="-135.5" y="225.0" />
-            </edge>
-            <edge source="boundary.UserFormGUI" target="control.SessionController">
-              <point x="145.5" y="251.0" />
-              <point x="643.536111111111" y="1033.0" />
-              <point x="779.7166666666667" y="1033.0" />
-              <point x="-24.699999999999932" y="-186.5" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.33198146002317497" x="-91.47643979057591" y="712.9319371727748" />
+          <settings layout="Hierarchic Group" zoom="0.33198146002317497" x="889.0" y="853.0" />
           <SelectedNodes>
-            <node>boundary.UserFormGUI</node>
+            <node>boundary.GUI</node>
           </SelectedNodes>
           <Categories>
             <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -2024,6 +1503,11 @@
         <state relative-caret-position="198">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
             <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
             <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
             <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
@@ -2039,24 +1523,102 @@
         <state relative-caret-position="18">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2034">
-          <caret line="123" column="107" selection-start-line="123" selection-start-column="107" selection-end-line="123" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#1428#1429#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1715#1716#0" expanded="false" />
+            <element signature="e#1753#1754#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3348">
+          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="123" column="107" selection-start-line="123" selection-start-column="107" selection-end-line="123" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/AdminGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/CorporateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding>
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/RegisteredUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
       </provider>
