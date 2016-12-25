@@ -33,11 +33,15 @@ public class SessionController
         {
             case 1:
                 gui = new UserFormGUI(mainFrame);
-                System.out.print(frameN);
+                break;
+            case 2:
+                gui = new ConfirmGUI(mainFrame);
                 break;
             case 3:
                 gui = new ProfileGUI(mainFrame, user.getName(), user.getEmail(), user.getEmail());
                 break;
+            case 4:
+                //gui = new CorporateFormGUI(mainFrame)
         }
     }
 
@@ -55,11 +59,6 @@ public class SessionController
     {
         dbController.addUser(this.user);
 
-    }
-
-    public void updateMailGUI(JFrame mainFrame)
-    {
-        gui = new ConfirmGUI(mainFrame);
     }
 
     public boolean checkPWDFields(char[] p1, char[] p2)

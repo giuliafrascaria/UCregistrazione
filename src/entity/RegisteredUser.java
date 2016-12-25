@@ -3,5 +3,6 @@ package entity;
 /**
  * Created by giogge on 24/12/16.
  */
-public class RegisteredUser {
+public abstract class RegisteredUser
+{
 }

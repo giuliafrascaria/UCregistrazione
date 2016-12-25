@@ -13,7 +13,7 @@ public class AccessGUI implements GUI
     private JFrame mainFrame;
 
     private JPanel signupPanel;
-    private JButton corporateSignUp;
+    private JButton corporateSignUpButton;
     private JButton privateSignUpButton;
 
     public AccessGUI(JFrame mainFrame)
@@ -22,10 +22,10 @@ public class AccessGUI implements GUI
         signupPanel = new JPanel();
         //signupPanel.setLayout(new GridLayout(5, 4));
 
-        corporateSignUp = new JButton("SIGN UP AZIENDA");
+        corporateSignUpButton = new JButton("SIGN UP AZIENDA");
         privateSignUpButton = new JButton("SIGN UP PRIVATO");
 
-        signupPanel.add(corporateSignUp);
+        signupPanel.add(corporateSignUpButton);
         signupPanel.add(privateSignUpButton);
 
         this.mainFrame = mainFrame;
@@ -36,6 +36,12 @@ public class AccessGUI implements GUI
         this.mainFrame.setContentPane(signupPanel);
 
         this.privateSignUpButton.addActionListener(actionEvent ->
+        {
+            this.mainFrame.setVisible(false);
+            controller.updateGUI(this.mainFrame, 1);
+        });
+
+        this.corporateSignUpButton.addActionListener(actionEvent ->
         {
             this.mainFrame.setVisible(false);
             controller.updateGUI(this.mainFrame, 1);

@@ -23,6 +23,15 @@ public class DatabaseController
         this.dataSource = new DataSource();
     }
 
+    private class DatabaseAccess implements Runnable
+    {
+        @Override
+        public void run()
+        {
+
+        }
+    }
+
 
     public boolean checkUser(String mail) throws Exception
     {
@@ -35,6 +44,7 @@ public class DatabaseController
 
     private PrivateUser findByPrimaryKey(String userID) throws Exception
     {
+
         Connection connection = null;
         PreparedStatement statement = null;
         PrivateUser user = null;

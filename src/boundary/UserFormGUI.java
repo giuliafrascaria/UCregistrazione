@@ -124,7 +124,7 @@ public class UserFormGUI implements GUI
                     controller.saveData(nameField.getText(), emailField.getText(), surnameField.getText(), pwdField.getPassword());
                     mailController.sendMail(nameField.getText(), emailField.getText());
                     this.mainFrame.setVisible(false);
-                    controller.updateMailGUI(this.mainFrame);
+                    controller.updateGUI(this.mainFrame, 2);
                 }
                 else
                 {

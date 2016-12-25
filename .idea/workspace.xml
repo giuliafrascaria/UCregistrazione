@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6362816-340e-4047-89b9-1d1f4f311ab2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/control/Observer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/CorporateUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/control/DatabaseControllerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/control/MailControllerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/control/SessionControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UCsignup.iml" afterPath="$PROJECT_DIR$/UCsignup.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/AccessGUI.java" afterPath="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/db.sql" afterPath="$PROJECT_DIR$/src/database/db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/PrivateUser.java" afterPath="$PROJECT_DIR$/src/entity/PrivateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/AdminGUI.java" afterPath="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/UserFormGUI.java" afterPath="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/DatabaseController.java" afterPath="$PROJECT_DIR$/src/control/DatabaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/Observer.java" afterPath="$PROJECT_DIR$/src/control/Observer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/SessionController.java" afterPath="$PROJECT_DIR$/src/control/SessionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Admin.java" afterPath="$PROJECT_DIR$/src/entity/Admin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/CorporateUser.java" afterPath="$PROJECT_DIR$/src/entity/CorporateUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/RegisteredUser.java" afterPath="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
     </list>
     <ignored path="UCsignup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +51,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserFormGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
+      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="123" column="107" selection-start-line="123" selection-start-column="107" selection-end-line="123" selection-end-column="107" />
+            <state relative-caret-position="-324">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+              <folding>
+                <marker date="1482679489126" expanded="true" signature="1156:1206" ph="select * fro... users" />
+                <marker date="1482679489126" expanded="true" signature="1241:1261" ph="select * fro... Privato" />
+                <marker date="1482679489126" expanded="true" signature="1241:1277" ph="select * fro... UtenteRegistrato" />
+                <marker date="1482679489126" expanded="true" signature="2514:2578" ph="INSERT INTO USERS.UtenteRegistrato... " />
+                <marker date="1482679489126" expanded="true" signature="2548:2578" ph="insert into users... " />
+                <marker date="1482679489126" expanded="true" signature="2613:2675" ph="INSERT INTO USERS.UtenteRegistrato... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/GUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,29 +81,11 @@
       <file leaf-file-name="AdminGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/AdminGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/Observer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CorporateUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/CorporateUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +93,8 @@
       <file leaf-file-name="PrivateUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+            <state relative-caret-position="54">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding>
                 <element signature="e#408#409#0" expanded="true" />
                 <element signature="e#446#447#0" expanded="true" />
@@ -99,51 +103,56 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserFormGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RegisteredUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/RegisteredUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entity/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SessionController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="720">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
-                <element signature="e#557#558#0" expanded="false" />
-                <element signature="e#591#592#0" expanded="false" />
-                <element signature="e#1428#1429#0" expanded="false" />
-                <element signature="e#1475#1476#0" expanded="false" />
-                <element signature="e#1715#1716#0" expanded="false" />
-                <element signature="e#1753#1754#0" expanded="false" />
-                <element signature="e#1808#1809#0" expanded="false" />
-                <element signature="e#1849#1850#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/db.sql">
+      <file leaf-file-name="MailController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3348">
-              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/ProfileGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,8 +160,8 @@
       <file leaf-file-name="AccessGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="-219">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -166,6 +175,7 @@
         <option value="Singleton" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -193,16 +203,21 @@
         <option value="$PROJECT_DIR$/src/control/MailController.java" />
         <option value="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/ProfileGUI.java" />
-        <option value="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
-        <option value="$PROJECT_DIR$/src/control/DatabaseController.java" />
         <option value="$PROJECT_DIR$/src/control/UserFactory.java" />
-        <option value="$PROJECT_DIR$/src/control/SessionController.java" />
         <option value="$PROJECT_DIR$/src/database/db.sql" />
-        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
-        <option value="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
+        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
         <option value="$PROJECT_DIR$/src/entity/Admin.java" />
         <option value="$PROJECT_DIR$/src/entity/CorporateUser.java" />
-        <option value="$PROJECT_DIR$/src/entity/PrivateUser.java" />
+        <option value="$PROJECT_DIR$/src/control/Observer.java" />
+        <option value="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
+        <option value="$PROJECT_DIR$/src/control/DatabaseController.java" />
+        <option value="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
+        <option value="$PROJECT_DIR$/src/test/control/DatabaseControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/control/MailControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/control/SessionControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/boundary/AccessGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/UserFormGUI.java" />
+        <option value="$PROJECT_DIR$/src/control/SessionController.java" />
       </list>
     </option>
   </component>
@@ -367,12 +382,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Scaricati/junit-4.12 (1).jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="control" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/database" />
     </key>
@@ -863,7 +885,7 @@
       <workItem from="1482181548697" duration="820000" />
       <workItem from="1482230941118" duration="883000" />
       <workItem from="1482231834228" duration="8990000" />
-      <workItem from="1482569314102" duration="969000" />
+      <workItem from="1482569314102" duration="5851000" />
     </task>
     <task id="LOCAL-00001" summary="package creation&#10;">
       <created>1480756969809</created>
@@ -991,14 +1013,21 @@
       <option name="project" value="LOCAL" />
       <updated>1482254386106</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="estensione caso d'uso per registrazione aziende, solo class">
+      <created>1482587961442</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1482587961442</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70886000" />
+    <option name="totallyTimeSpent" value="75768000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="0" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1100,7 +1129,8 @@
     <MESSAGE value="strano update Database" />
     <MESSAGE value="fine use case e class diagram" />
     <MESSAGE value="aggiunta pattern factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunta pattern factory" />
+    <MESSAGE value="estensione caso d'uso per registrazione aziende, solo class" />
+    <option name="LAST_COMMIT_MESSAGE" value="estensione caso d'uso per registrazione aziende, solo class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1111,54 +1141,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#465#466#0" expanded="false" />
-            <element signature="e#499#500#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#366#367#0" expanded="false" />
-            <element signature="e#400#401#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
-            <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
-            <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482241965075" expanded="true" signature="2382:2446" ph="INSERT INTO USERS.UtenteRegistrato... " />
-            <marker date="1482241965075" expanded="true" signature="2416:2446" ph="insert into users... " />
-            <marker date="1482241965075" expanded="true" signature="2481:2543" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482679489126" expanded="true" signature="1156:1206" ph="select * fro... users" />
+            <marker date="1482679489126" expanded="true" signature="1241:1261" ph="select * fro... Privato" />
+            <marker date="1482679489126" expanded="true" signature="1241:1277" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482679489126" expanded="true" signature="2514:2578" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482679489126" expanded="true" signature="2548:2578" ph="insert into users... " />
+            <marker date="1482679489126" expanded="true" signature="2613:2675" ph="INSERT INTO USERS.UtenteRegistrato... " />
           </folding>
         </state>
       </provider>
@@ -1170,12 +1163,10 @@
           <folding>
             <element signature="e#557#558#0" expanded="false" />
             <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1739#1740#0" expanded="false" />
+            <element signature="e#1777#1778#0" expanded="false" />
+            <element signature="e#1832#1833#0" expanded="false" />
+            <element signature="e#1873#1874#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1281,13 +1272,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/FormGUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7572d37e-c624-4a01-a81c-44689db03a1a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1308,22 +1292,6 @@
     <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql" />
     <entry file="file://$PROJECT_DIR$/src/boundary/summaryGUI.java" />
     <entry file="file://$PROJECT_DIR$/src/database/dbInit.sql" />
-    <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#465#466#0" expanded="false" />
-            <element signature="e#499#500#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/ConfirmGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1363,16 +1331,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/ProfileGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1498,26 +1456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#366#367#0" expanded="false" />
-            <element signature="e#400#401#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#490#491#0" expanded="false" />
-            <marker date="1482241965075" expanded="true" signature="1024:1074" ph="select * fro... users" />
-            <marker date="1482241965075" expanded="true" signature="1109:1129" ph="select * fro... Privato" />
-            <marker date="1482241965075" expanded="true" signature="1109:1145" ph="select * fro... UtenteRegistrato" />
-            <marker date="1482241965075" expanded="true" signature="2382:2446" ph="INSERT INTO USERS.UtenteRegistrato... " />
-            <marker date="1482241965075" expanded="true" signature="2416:2446" ph="insert into users... " />
-            <marker date="1482241965075" expanded="true" signature="2481:2543" ph="INSERT INTO USERS.UtenteRegistrato... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/UserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1531,23 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#1475#1476#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1849#1850#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/db.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3348">
@@ -1556,50 +1477,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="123" column="107" selection-start-line="123" selection-start-column="107" selection-end-line="123" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/CorporateUser.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/RegisteredUser.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/PrivateUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        <state relative-caret-position="54">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
             <element signature="e#408#409#0" expanded="true" />
             <element signature="e#446#447#0" expanded="true" />
@@ -1607,19 +1520,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/RegisteredUser.java">
+    <entry file="file://$PROJECT_DIR$/src/control/MailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Admin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/control/MailControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="378">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/control/SessionControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/control/DatabaseControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/DatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding>
+            <marker date="1482679489126" expanded="true" signature="1156:1206" ph="select * fro... users" />
+            <marker date="1482679489126" expanded="true" signature="1241:1261" ph="select * fro... Privato" />
+            <marker date="1482679489126" expanded="true" signature="1241:1277" ph="select * fro... UtenteRegistrato" />
+            <marker date="1482679489126" expanded="true" signature="2514:2578" ph="INSERT INTO USERS.UtenteRegistrato... " />
+            <marker date="1482679489126" expanded="true" signature="2548:2578" ph="insert into users... " />
+            <marker date="1482679489126" expanded="true" signature="2613:2675" ph="INSERT INTO USERS.UtenteRegistrato... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ProfileGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/AccessGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/UserFormGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/AdminGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1680,6 +1680,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
