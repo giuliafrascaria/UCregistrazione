@@ -1,9 +1,6 @@
 package control;
 
-import boundary.ConfirmGUI;
-import boundary.GUI;
-import boundary.ProfileGUI;
-import boundary.UserFormGUI;
+import boundary.*;
 import entity.PrivateUser;
 
 import javax.swing.*;
@@ -41,7 +38,11 @@ public class SessionController
                 gui = new ProfileGUI(mainFrame, user.getName(), user.getEmail(), user.getEmail());
                 break;
             case 4:
-                //gui = new CorporateFormGUI(mainFrame)
+                gui = new CorporateFormGUI(mainFrame);
+                break;
+            case 5:
+                gui = new AccessGUI(mainFrame);
+                break;
         }
     }
 

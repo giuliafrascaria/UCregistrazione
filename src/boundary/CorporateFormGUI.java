@@ -1,7 +1,6 @@
 package boundary;
 
 import control.DatabaseController;
-import control.MailController;
 import control.SessionController;
 import exceptions.IncompleteFormException;
 import exceptions.InvalidMailException;
@@ -11,24 +10,26 @@ import exceptions.UserAlreadyRegisteredException;
 import javax.swing.*;
 import java.awt.*;
 
-
-
-public class UserFormGUI implements FormGUI
+/**
+ * Created by giogge on 26/12/16.
+ */
+public class CorporateFormGUI implements FormGUI
 {
     private SessionController controller = SessionController.getInstance();
     private DatabaseController dbController = DatabaseController.getInstance();
-    private MailController mailController = MailController.getInstance();
 
     private JFrame mainFrame = new JFrame();
 
     private JTextField nameField;
-    private JTextField surnameField;
+    private JTextField ownerField;
     private JTextField emailField;
+    private JTextField PIVAField;
     private JPasswordField pwdField;
     private JPasswordField confirmPwdField;
     private JButton confirmButton, cancelButton;
-    private JLabel cognome;
+    private JLabel owner;
     private JLabel nome;
+    private JLabel PIVA;
     private JLabel email;
     private JLabel pwd;
     private JLabel confirmPwd;
@@ -36,7 +37,7 @@ public class UserFormGUI implements FormGUI
     private JPanel formPanel, globalPanel;
 
 
-    public UserFormGUI(JFrame mainFrame)
+    public CorporateFormGUI(JFrame mainFrame)
     {
         this.mainFrame = mainFrame;
 
@@ -44,25 +45,31 @@ public class UserFormGUI implements FormGUI
         globalPanel.setLayout(new GridLayout(3,1));
 
         formPanel = new JPanel();
-        formPanel.setLayout(new GridLayout(5, 2));
+        formPanel.setLayout(new GridLayout(6, 2));
 
-        nome = new JLabel("Nome");
+        nome = new JLabel("Nome Azienda");
         formPanel.add(nome);
 
         nameField = new JTextField();
         formPanel.add(nameField);
 
-        cognome = new JLabel("Cognome");
-        formPanel.add(cognome);
+        owner = new JLabel("Proprietario");
+        formPanel.add(owner);
 
-        surnameField = new JTextField();
-        formPanel.add(surnameField);
+        ownerField = new JTextField();
+        formPanel.add(ownerField);
 
         email = new JLabel("email");
         formPanel.add(email);
 
         emailField = new JTextField();
         formPanel.add(emailField);
+
+        PIVA = new JLabel("Partita IVA");
+        formPanel.add(PIVA);
+
+        PIVAField = new JTextField();
+        formPanel.add(PIVAField);
 
         pwd = new JLabel("Password");
         formPanel.add(pwd);
@@ -111,7 +118,7 @@ public class UserFormGUI implements FormGUI
             {
                 throw new IncompleteFormException();
             }
-            if (controller.checkEmptyFields(surnameField.getText()))
+            if (controller.checkEmptyFields(ownerField.getText()))
             {
                 throw new IncompleteFormException();
             }
@@ -131,13 +138,13 @@ public class UserFormGUI implements FormGUI
             if (dbController.checkUser(emailField.getText()))
             {
                 JOptionPane.showMessageDialog(globalPanel,
-                        "Ti verrà inviata una mail di conferma", "Confirm",
+                        "L'Amministratore verificherà la conformità dei dati", "Confirm",
                         JOptionPane.INFORMATION_MESSAGE);
 
-                controller.saveData(nameField.getText(), emailField.getText(), surnameField.getText(), pwdField.getPassword());
-                mailController.sendMail(nameField.getText(), emailField.getText());
+                //controller.saveData(nameField.getText(), emailField.getText(), ownerField.getText(), pwdField.getPassword());
+                //mailController.sendMail(nameField.getText(), emailField.getText());
                 this.mainFrame.setVisible(false);
-                controller.updateGUI(this.mainFrame, 2);
+                controller.updateGUI(this.mainFrame, 3);
             }
             else
             {
@@ -180,5 +187,4 @@ public class UserFormGUI implements FormGUI
         this.mainFrame.setVisible(false);
         controller.updateGUI(this.mainFrame, 5);
     }
-
 }

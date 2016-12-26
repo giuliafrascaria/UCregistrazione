@@ -1,5 +1,7 @@
 package control;
 
+import entity.Admin;
+import entity.CorporateUser;
 import entity.PrivateUser;
 
 
@@ -17,6 +19,10 @@ class UserFactory
     {
         return new PrivateUser();
     }
+
+    CorporateUser createCorporateUser() {return new CorporateUser();}
+
+    Admin createAdmin() {return new Admin();}
 
 
 }

@@ -44,7 +44,7 @@ public class AccessGUI implements GUI
         this.corporateSignUpButton.addActionListener(actionEvent ->
         {
             this.mainFrame.setVisible(false);
-            controller.updateGUI(this.mainFrame, 1);
+            controller.updateGUI(this.mainFrame, 4);
         });
 
         mainFrame.setVisible(true);
