@@ -50,7 +50,7 @@ public class ConfirmGUI implements GUI
                             JOptionPane.INFORMATION_MESSAGE);
                     try
                     {
-                        controller.addUser();
+                        //controller.addUser();
                         this.mainFrame.setVisible(false);
                         controller.updateGUI(this.mainFrame, 3);
 

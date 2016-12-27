@@ -1,7 +1,7 @@
 package boundary;
 
+import control.CorporateSessionController;
 import control.DatabaseController;
-import control.SessionController;
 import exceptions.IncompleteFormException;
 import exceptions.InvalidMailException;
 import exceptions.PasswordMismatchException;
@@ -10,12 +10,10 @@ import exceptions.UserAlreadyRegisteredException;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Created by giogge on 26/12/16.
- */
+
 public class CorporateFormGUI implements FormGUI
 {
-    private SessionController controller = SessionController.getInstance();
+    private CorporateSessionController controller = CorporateSessionController.getInstance();
     private DatabaseController dbController = DatabaseController.getInstance();
 
     private JFrame mainFrame = new JFrame();
@@ -122,6 +120,10 @@ public class CorporateFormGUI implements FormGUI
             {
                 throw new IncompleteFormException();
             }
+            if (controller.checkEmptyFields(PIVAField.getText()))
+            {
+                throw new IncompleteFormException();
+            }
             if (controller.checkEmptyFields(emailField.getText()))
             {
                 throw new IncompleteFormException();
@@ -141,9 +143,9 @@ public class CorporateFormGUI implements FormGUI
                         "L'Amministratore verificherà la conformità dei dati", "Confirm",
                         JOptionPane.INFORMATION_MESSAGE);
 
-                //controller.saveData(nameField.getText(), emailField.getText(), ownerField.getText(), pwdField.getPassword());
-                //mailController.sendMail(nameField.getText(), emailField.getText());
+                controller.saveData(nameField.getText(), emailField.getText(), ownerField.getText(), PIVAField.getText(), pwdField.getPassword());
                 this.mainFrame.setVisible(false);
+                controller.sendSignal();
                 controller.updateGUI(this.mainFrame, 3);
             }
             else
@@ -185,6 +187,6 @@ public class CorporateFormGUI implements FormGUI
     public void cancel()
     {
         this.mainFrame.setVisible(false);
-        controller.updateGUI(this.mainFrame, 5);
+        controller.updateGUI(this.mainFrame, 4);
     }
 }

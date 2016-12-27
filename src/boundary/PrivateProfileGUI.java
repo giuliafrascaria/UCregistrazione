@@ -1,16 +1,16 @@
 package boundary;
 
+
 import control.DatabaseController;
 import control.MailController;
 import control.SessionController;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Observable;
 
-
-public class AdminGUI extends Observable implements GUI
+public class PrivateProfileGUI implements ProfileGUI
 {
+
     private SessionController controller = SessionController.getInstance();
     private DatabaseController dbController = DatabaseController.getInstance();
     private MailController mailController = MailController.getInstance();
@@ -20,16 +20,18 @@ public class AdminGUI extends Observable implements GUI
 
 
     private JButton confirmButton;
-    private JButton rejectButton;
-    private JLabel corporateName;
-    private JLabel OwnerName;
+    private JLabel cognome;
+    private JLabel nome;
     private JLabel email;
+    private JLabel welcome;
 
-    private JLabel P_IVA;
+    private JLabel cognomeUtente;
+    private JLabel nomeUtente;
+    private JLabel emailUtente;
 
-    private JPanel formPanel, globalPanel, examinPanel;
+    private JPanel formPanel, globalPanel, welcomePanel;
 
-    public AdminGUI(JFrame mainFrame, String name, String surname, String mail)
+    public PrivateProfileGUI(JFrame mainFrame, String name, String surname, String mail)
     {
 
         this.mainFrame = mainFrame;
@@ -37,16 +39,34 @@ public class AdminGUI extends Observable implements GUI
         globalPanel = new JPanel();
         globalPanel.setLayout(new GridLayout(2,1));
 
-        examinPanel = new JPanel();
+        welcomePanel = new JPanel();
 
+        welcome = new JLabel("\n\nBENVENUTO IN DaDa!!!");
+        welcomePanel.add(welcome);
 
-        globalPanel.add(examinPanel);
+        globalPanel.add(welcomePanel);
 
         formPanel = new JPanel();
         formPanel.setLayout(new GridLayout(3, 2));
 
+        nome = new JLabel("Nome");
+        formPanel.add(nome);
+
+        nomeUtente = new JLabel(name);
+        formPanel.add(nomeUtente);
+
+        cognome = new JLabel("Cognome");
+        formPanel.add(cognome);
+
+        cognomeUtente = new JLabel(surname);
+        formPanel.add(cognomeUtente);
+
         email = new JLabel("email");
         formPanel.add(email);
+
+        emailUtente = new JLabel(mail);
+        formPanel.add(emailUtente);
+
 
         globalPanel.add(formPanel);
         //mainFrame.add(formPanel, BorderLayout.NORTH);
@@ -63,3 +83,4 @@ public class AdminGUI extends Observable implements GUI
 
     }
 }
+

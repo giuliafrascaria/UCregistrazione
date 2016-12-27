@@ -2,7 +2,7 @@ package boundary;
 
 import control.DatabaseController;
 import control.MailController;
-import control.SessionController;
+import control.PrivateSessionController;
 import exceptions.IncompleteFormException;
 import exceptions.InvalidMailException;
 import exceptions.PasswordMismatchException;
@@ -15,7 +15,7 @@ import java.awt.*;
 
 public class UserFormGUI implements FormGUI
 {
-    private SessionController controller = SessionController.getInstance();
+    private PrivateSessionController controller = PrivateSessionController.getInstance();
     private DatabaseController dbController = DatabaseController.getInstance();
     private MailController mailController = MailController.getInstance();
 
@@ -80,7 +80,7 @@ public class UserFormGUI implements FormGUI
         //mainFrame.add(formPanel, BorderLayout.NORTH);
 
 
-        confirmButton = new JButton("CONFERMA");
+        confirmButton = new JButton("SUBMIT");
         confirmButton.addActionListener(actionEvent ->
         {
             submit();
@@ -178,7 +178,7 @@ public class UserFormGUI implements FormGUI
     public void cancel()
     {
         this.mainFrame.setVisible(false);
-        controller.updateGUI(this.mainFrame, 5);
+        controller.updateGUI(this.mainFrame, 4);
     }
 
 }
