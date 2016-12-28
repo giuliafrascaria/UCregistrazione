@@ -3,7 +3,7 @@ package entity;
 /**
  * Created by giogge on 24/12/16.
  */
-public abstract class RegisteredUser
+public class RegisteredUser
 {
     protected String email;
     protected char[] pwd;

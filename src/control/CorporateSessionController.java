@@ -17,7 +17,7 @@ public class CorporateSessionController extends SessionController
 
     private GUI gui;
 
-    private DatabaseController dbController = DatabaseController.getInstance();
+    private CorporateDBcontroller dbController = CorporateDBcontroller.getOurInstance();
     private CorporateUser user;
 
     private CorporateSessionController()
@@ -35,7 +35,7 @@ public class CorporateSessionController extends SessionController
                 gui = new ConfirmGUI(mainFrame);
                 break;
             case 3:
-                gui = new CorporateProfileGUI();
+                gui = new CorporateProfileGUI(mainFrame, user.getName(), user.getOwner(), user.getEmail(), 0);
                 break;
             case 4:
                 gui = new AccessGUI(mainFrame);
@@ -45,7 +45,7 @@ public class CorporateSessionController extends SessionController
 
     public void sendSignal() throws Exception
     {
-        //dbController.addUser(this.user);
+        dbController.addUser(this.user);
     }
 
     public void saveData(String name, String email, String owner, String piva, char[] pwd)

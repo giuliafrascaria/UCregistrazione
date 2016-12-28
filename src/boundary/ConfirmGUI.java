@@ -1,6 +1,7 @@
 package boundary;
 
 import control.MailController;
+import control.PrivateSessionController;
 import control.SessionController;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ import java.awt.*;
 public class ConfirmGUI implements GUI
 {
 
-    private SessionController controller = SessionController.getInstance();
+    private PrivateSessionController controller = PrivateSessionController.getInstance();
     private MailController mailController = MailController.getInstance();
 
     private JFrame mainFrame = new JFrame();
@@ -50,7 +51,7 @@ public class ConfirmGUI implements GUI
                             JOptionPane.INFORMATION_MESSAGE);
                     try
                     {
-                        //controller.addUser();
+                        controller.addUser();
                         this.mainFrame.setVisible(false);
                         controller.updateGUI(this.mainFrame, 3);
 

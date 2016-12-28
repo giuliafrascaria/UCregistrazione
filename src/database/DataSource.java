@@ -1,8 +1,5 @@
 package database;
 
-/**
- * Created by giogge on 18/12/16.
- */
 
 
 import java.sql.Connection;

@@ -3,6 +3,7 @@ package control;
 
 import database.DataSource;
 import entity.PrivateUser;
+import entity.RegisteredUser;
 
 
 import java.sql.Connection;
@@ -12,7 +13,7 @@ import java.sql.ResultSet;
 
 public class DatabaseController
 {
-    private DataSource dataSource;
+    protected DataSource dataSource;
     private static DatabaseController ourInstance = new DatabaseController();
     public static DatabaseController getInstance() {
         return ourInstance;
@@ -23,31 +24,22 @@ public class DatabaseController
         this.dataSource = new DataSource();
     }
 
-    private class DatabaseAccess implements Runnable
-    {
-        @Override
-        public void run()
-        {
-
-        }
-    }
-
 
     public boolean checkUser(String mail) throws Exception
     {
-        PrivateUser user;
+        RegisteredUser user;
         System.out.println("sto per cercare l'utente");
         user = this.findByPrimaryKey(mail);
         System.out.println("ricerca finita");
         return user == null;
     }
 
-    private PrivateUser findByPrimaryKey(String userID) throws Exception
+    private RegisteredUser findByPrimaryKey(String userID) throws Exception
     {
 
         Connection connection = null;
         PreparedStatement statement = null;
-        PrivateUser user = null;
+        RegisteredUser user = null;
         ResultSet result = null;
         final String query = "select * from USERS.UtenteRegistrato where EMAIL=?";
         //final String query = "select * from USERS.UtenteRegistrato";
@@ -62,7 +54,7 @@ public class DatabaseController
 
             if (result.next()) {
                 if (user == null) {
-                    user = new PrivateUser();
+                    user = new RegisteredUser();
                     user.setEmail(result.getString("EMAIL"));
                     //user.setName(result.getString("NOME"));
                     System.out.println(user.getEmail());
@@ -86,15 +78,15 @@ public class DatabaseController
         return user;
     }
 
-    void addUser(PrivateUser newUser) throws Exception
+    void addRegisteredUser(RegisteredUser newUser) throws Exception
     {
 
         Connection connection = null;
-        Connection connection2 = null;
+
         PreparedStatement statement = null;
-        PreparedStatement statement2 = null;
+
         final String insert = "INSERT INTO USERS.UtenteRegistrato(EMAIL, PASSWORD) values (?,?)";
-        final String insert2 = "INSERT INTO USERS.Privato(NOME, COGNOME, EMAIL) values (?,?,?)";
+
         try
         {
             connection = this.dataSource.getConnection();
@@ -120,29 +112,7 @@ public class DatabaseController
                 connection.close();
             }
         }
-        try
-        {
-            connection2 = this.dataSource.getConnection();
 
-            statement2 = connection2.prepareStatement(insert2);
-            statement2.setString(1, newUser.getName());
-            statement2.setString(2, newUser.getSurname());
-            statement2.setString(3, newUser.getEmail());
-
-            statement2.executeUpdate();
-        }
-        finally
-        {
-            if(statement2 != null)
-            {
-                statement2.close();
-            }
-
-            if(connection2  != null)
-            {
-                connection.close();
-            }
-        }
 
 
     }

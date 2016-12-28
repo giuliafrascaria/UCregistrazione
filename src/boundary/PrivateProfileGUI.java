@@ -11,15 +11,12 @@ import java.awt.*;
 public class PrivateProfileGUI implements ProfileGUI
 {
 
-    private SessionController controller = SessionController.getInstance();
+/*    private SessionController controller = SessionController.getInstance();
     private DatabaseController dbController = DatabaseController.getInstance();
-    private MailController mailController = MailController.getInstance();
+    private MailController mailController = MailController.getInstance();*/
 
     private JFrame mainFrame = new JFrame();
 
-
-
-    private JButton confirmButton;
     private JLabel cognome;
     private JLabel nome;
     private JLabel email;

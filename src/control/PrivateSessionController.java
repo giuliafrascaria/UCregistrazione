@@ -13,7 +13,7 @@ public class PrivateSessionController extends SessionController
 
     private GUI gui;
 
-    private DatabaseController dbController = DatabaseController.getInstance();
+    private PrivateDBcontroller dbController = PrivateDBcontroller.getOurInstance();
     private PrivateUser user;
 
     private PrivateSessionController(){}
