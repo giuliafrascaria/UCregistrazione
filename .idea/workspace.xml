@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a6362816-340e-4047-89b9-1d1f4f311ab2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" afterPath="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/CorporateProfileGUI.java" afterPath="$PROJECT_DIR$/src/boundary/CorporateProfileGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/boundary/PrivateProfileGUI.java" afterPath="$PROJECT_DIR$/src/boundary/PrivateProfileGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/CorporateDBcontroller.java" afterPath="$PROJECT_DIR$/src/control/CorporateDBcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/CorporateSessionController.java" afterPath="$PROJECT_DIR$/src/control/CorporateSessionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/DatabaseController.java" afterPath="$PROJECT_DIR$/src/control/DatabaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/PrivateDBcontroller.java" afterPath="$PROJECT_DIR$/src/control/PrivateDBcontroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/control/PrivateSessionController.java" afterPath="$PROJECT_DIR$/src/control/PrivateSessionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/DataSource.java" afterPath="$PROJECT_DIR$/src/database/DataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/RegisteredUser.java" afterPath="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/db.sql" afterPath="$PROJECT_DIR$/src/database/db.sql" />
     </list>
     <ignored path="UCsignup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,11 +70,11 @@
       <file leaf-file-name="CorporateDBcontroller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/CorporateDBcontroller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1482938459842" expanded="true" signature="671:737" ph="INSERT INTO USERS.Azienda... " />
+                <marker date="1482939402514" expanded="true" signature="671:755" ph="INSERT INTO USERS.Azienda... " />
               </folding>
             </state>
           </provider>
@@ -114,8 +106,8 @@
       <file leaf-file-name="db.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/database/db.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="288">
+              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -188,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/control/CorporateBDcontroller.java" />
         <option value="$PROJECT_DIR$/src/control/AdminDBcontroller.java" />
         <option value="$PROJECT_DIR$/src/boundary/AdminGUI.java" />
-        <option value="$PROJECT_DIR$/src/database/db.sql" />
         <option value="$PROJECT_DIR$/src/boundary/PrivateProfileGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/CorporateProfileGUI.java" />
         <option value="$PROJECT_DIR$/src/entity/RegisteredUser.java" />
@@ -196,9 +187,10 @@
         <option value="$PROJECT_DIR$/src/boundary/ConfirmGUI.java" />
         <option value="$PROJECT_DIR$/src/control/CorporateSessionController.java" />
         <option value="$PROJECT_DIR$/src/control/DatabaseController.java" />
-        <option value="$PROJECT_DIR$/src/control/CorporateDBcontroller.java" />
         <option value="$PROJECT_DIR$/src/control/PrivateDBcontroller.java" />
         <option value="$PROJECT_DIR$/src/database/DataSource.java" />
+        <option value="$PROJECT_DIR$/src/database/db.sql" />
+        <option value="$PROJECT_DIR$/src/control/CorporateDBcontroller.java" />
       </list>
     </option>
   </component>
@@ -866,7 +858,7 @@
       <workItem from="1482181548697" duration="820000" />
       <workItem from="1482230941118" duration="883000" />
       <workItem from="1482231834228" duration="8990000" />
-      <workItem from="1482569314102" duration="31718000" />
+      <workItem from="1482569314102" duration="32461000" />
     </task>
     <task id="LOCAL-00001" summary="package creation&#10;">
       <created>1480756969809</created>
@@ -1029,11 +1021,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482933527631</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="aggiunta azienda database, manca approvazione admin">
+      <created>1482938990780</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1482938990780</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101635000" />
+    <option name="totallyTimeSpent" value="102378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -1143,7 +1142,8 @@
     <MESSAGE value="Aggiunta gestione eccezioni e form registrazione azienda" />
     <MESSAGE value="cambiamento form azienda e introduzione adminObserver" />
     <MESSAGE value="vari aggiustamenti admin controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="vari aggiustamenti admin controller" />
+    <MESSAGE value="aggiunta azienda database, manca approvazione admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunta azienda database, manca approvazione admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1671,17 +1671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/CorporateDBcontroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1482938459842" expanded="true" signature="671:737" ph="INSERT INTO USERS.Azienda... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/PrivateDBcontroller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1693,10 +1682,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/CorporateDBcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1482939402514" expanded="true" signature="671:755" ph="INSERT INTO USERS.Azienda... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/db.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state relative-caret-position="288">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding />
         </state>
       </provider>

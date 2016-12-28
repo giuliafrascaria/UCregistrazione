@@ -24,7 +24,7 @@ public class CorporateDBcontroller extends DatabaseController
 
         PreparedStatement statement2 = null;
 
-        final String insert2 = "INSERT INTO USERS.Azienda(PIVA, NOMEAZIENDA, EMAIL) values (?,?,?)";
+        final String insert2 = "INSERT INTO USERS.Azienda(PIVA, NOMEAZIENDA, PROPRIETARIO, EMAIL) values (?,?, ?, ?)";
 
         try
         {
@@ -32,8 +32,9 @@ public class CorporateDBcontroller extends DatabaseController
 
             statement2 = connection2.prepareStatement(insert2);
             statement2.setString(1, newUser.getPiva());
-            statement2.setString(2, newUser.getOwner());
-            statement2.setString(3, newUser.getEmail());
+            statement2.setString(2, newUser.getName());
+            statement2.setString(3, newUser.getOwner());
+            statement2.setString(4, newUser.getEmail());
 
             statement2.executeUpdate();
         }

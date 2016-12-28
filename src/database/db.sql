@@ -20,6 +20,7 @@ CREATE TABLE USERS.UtenteRegistrato(
 CREATE TABLE USERS.Azienda(
  PIVA            VARCHAR                ,
  NOMEAZIENDA        VARCHAR             ,
+ PROPRIETARIO            VARCHAR,
  EMAIL            VARCHAR REFERENCES USERS.UtenteRegistrato(EMAIL),
  PRIMARY KEY (PIVA)
 );
