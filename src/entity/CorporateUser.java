@@ -3,8 +3,7 @@ package entity;
 
 public class CorporateUser extends RegisteredUser
 {
-    private String email, name, owner, piva;
-    private char[] pwd;
+    private String name, owner, piva;
 
     public CorporateUser() {}
 
@@ -34,23 +33,5 @@ public class CorporateUser extends RegisteredUser
         this.piva = piva;
     }
 
-    public String getEmail()
-    {
-        return email;
-    }
 
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
-
-    public char[] getPwd()
-    {
-        return pwd;
-    }
-
-    public void setPwd(char[] pwd)
-    {
-        this.pwd = pwd;
-    }
 }

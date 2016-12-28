@@ -9,7 +9,7 @@ import javax.swing.*;
 public class PrivateSessionController extends SessionController
 {
     private static PrivateSessionController ourInstance = new PrivateSessionController();
-    public static PrivateSessionController getInstance(){return ourInstance;}
+    public static PrivateSessionController getInstance() { return ourInstance; }
 
     private GUI gui;
 

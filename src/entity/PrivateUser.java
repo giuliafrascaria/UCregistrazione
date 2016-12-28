@@ -3,8 +3,7 @@ package entity;
 
 public class PrivateUser extends RegisteredUser
 {
-    private String email, name, surname;
-    private char[] pwd;
+    private String name, surname;
 
     public PrivateUser() {}
 
@@ -26,25 +25,9 @@ public class PrivateUser extends RegisteredUser
         this.surname = surname;
     }
 
-    public String getEmail()
-    {
-        return email;
-    }
 
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
 
-    public char[] getPwd()
-    {
-        return pwd;
-    }
 
-    public void setPwd(char[] pwd)
-    {
-        this.pwd = pwd;
-    }
 
 
 }

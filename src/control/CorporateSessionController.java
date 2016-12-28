@@ -6,7 +6,9 @@ import entity.CorporateUser;
 import javax.swing.*;
 
 
-public class CorporateSessionController extends SessionController {
+public class CorporateSessionController extends SessionController
+{
+
     private static CorporateSessionController ourInstance = new CorporateSessionController();
     public static CorporateSessionController getInstance()
     {
@@ -33,7 +35,7 @@ public class CorporateSessionController extends SessionController {
                 gui = new ConfirmGUI(mainFrame);
                 break;
             case 3:
-                gui = new ProfileGUI(mainFrame, user.getName(), user.getEmail(), user.getEmail());
+                gui = new CorporateProfileGUI();
                 break;
             case 4:
                 gui = new AccessGUI(mainFrame);
@@ -44,7 +46,6 @@ public class CorporateSessionController extends SessionController {
     public void sendSignal() throws Exception
     {
         //dbController.addUser(this.user);
-
     }
 
     public void saveData(String name, String email, String owner, String piva, char[] pwd)

@@ -17,8 +17,6 @@ public class AdminGUI extends Observable implements GUI
 
     private JFrame mainFrame = new JFrame();
 
-
-
     private JButton confirmButton;
     private JButton rejectButton;
     private JLabel corporateName;

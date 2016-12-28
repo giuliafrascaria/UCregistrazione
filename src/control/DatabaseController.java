@@ -18,7 +18,7 @@ public class DatabaseController
         return ourInstance;
     }
 
-    private DatabaseController()
+    protected DatabaseController()
     {
         this.dataSource = new DataSource();
     }
